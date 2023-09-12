@@ -1,0 +1,135 @@
+@media (min-width:0px) and (max-width:600px) {
+    
+
+    .sec1container{
+    background-color: #fcfaf6;
+    /* margin-top: 0.2rem; */
+    z-index: 9;
+    
+}
+.sec1containerboxs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5rem 0rem; */
+    padding-top: 5vw;
+    padding-bottom: 5rem;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap-reverse;
+}
+.sec1box{
+    width: 100%;
+    position: relative;
+
+}
+.sec1box h1{
+    font-size: 6vw;
+    /* font-size: 4%; */
+}
+
+.sec1boximg{
+    text-align: center;
+}
+
+.sec1box img{
+    width: 70%;
+
+    margin: auto;
+}
+
+.sec1box p{
+    font-size: 3.7vw;
+    font-weight: bold;
+    padding-top: 3.5vw;
+    /* color: #bdd0f7; */
+}
+
+.sec1button button{
+    padding: 1rem;
+    font-size: 1.3rem;
+    border-radius: 34px;
+    margin: 1.4rem 0rem;
+    background-image:linear-gradient(90deg,rgb(193, 193, 198),rgb(240, 231, 231)) ;
+    border: none;
+}
+.sec1button button:hover{
+    cursor: pointer;
+}
+
+.buttonarrow{
+    padding: 0.4rem 0.7rem;
+    
+    border-radius: 100%;
+    background-color: rgb(242, 242, 248);
+}
+
+
+}
+
+@media (min-width:600px)  {
+    
+
+    .sec1container{
+    background-color: azure;
+    /* margin-top: 0.2rem; */
+    z-index: 9;
+    
+}
+.sec1containerboxs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 5rem 0rem; */
+    padding-top: 5vw;
+    padding-bottom: 5rem;
+    width: 90%;
+    margin: auto;
+}
+.sec1box{
+    width: 49%;
+    position: relative;
+
+}
+.sec1box h1{
+    font-size: 4vw;
+    /* font-size: 4%; */
+}
+
+.sec1boximg{
+    text-align: center;
+}
+
+.sec1box img{
+    width: 70%;
+
+    margin: auto;
+}
+
+.sec1box p{
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding-top: 3.5vw;
+}
+
+.sec1button button{
+    padding: 1rem;
+    font-size: 1.3rem;
+    border-radius: 34px;
+    margin: 1.4rem 0rem;
+    background-image:linear-gradient(90deg,rgb(193, 193, 198),rgb(240, 231, 231)) ;
+    border: none;
+}
+.sec1button button:hover{
+    cursor: pointer;
+}
+
+.buttonarrow{
+    padding: 0.4rem 0.7rem;
+    
+    border-radius: 100%;
+    background-color: rgb(242, 242, 248);
+}
+
+
+}

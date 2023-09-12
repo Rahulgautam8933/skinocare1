@@ -1,0 +1,42 @@
+@media (min-width:0px) and (max-width:600px) {
+    .privcycontainer{
+        padding: 2rem 0rem;
+    
+    } 
+    .privcyboxs ul {
+        display: flex;
+        justify-content: center;
+    }
+    .privcyboxs ul li{
+        list-style: none;
+        font-size: 2.5vw;
+        padding: 0.4rem;
+        margin: 0.2rem;
+        font-weight: 400;
+    }
+    .privcyboxs ul li:hover{
+        cursor: pointer;
+        color: rgb(64, 62, 62);
+    }
+}
+@media (min-width:600px)  {
+    .privcycontainer{
+        padding: 2rem 0rem;
+    
+    } 
+    .privcyboxs ul {
+        display: flex;
+        justify-content: center;
+    }
+    .privcyboxs ul li{
+        list-style: none;
+        font-size: 1.5vw;
+        padding: 0.4rem;
+        margin: 0.2rem;
+        font-weight: 400;
+    }
+    .privcyboxs ul li:hover{
+        cursor: pointer;
+        color: rgb(64, 62, 62);
+    }
+}

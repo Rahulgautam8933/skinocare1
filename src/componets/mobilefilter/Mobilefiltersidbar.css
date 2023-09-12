@@ -1,0 +1,37 @@
+
+.mobilefiltercontainer{
+    background-color: rgb(216, 216, 225);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+
+    padding: 0rem 3rem;
+}
+
+.mobilefilterclosebutton i{
+    font-size:2.3rem ;
+    padding: 1rem;
+}
+.flterselect{
+    margin: 0.5rem 0rem;
+   
+}
+.flterselect select{
+    font-size: 1.2rem;
+    border-radius: 27px;
+}
+
+.selectfiltercontainer{
+    padding: 1rem;
+    background-color: #fcf7ee;
+    border-radius: 12px;
+}
+
+.selerangefilter{
+    box-shadow: 1px 1px 12px 1px rgb(193, 193, 205);
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+
+}

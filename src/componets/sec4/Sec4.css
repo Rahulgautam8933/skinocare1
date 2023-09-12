@@ -1,0 +1,126 @@
+@media (min-width:0px) and (max-width:600px) {
+    
+    .sec4doctorimgs{
+        display: flex;
+        overflow: auto;
+        /* justify-content: space-between; */
+    }
+
+    .doctorimgs{
+        width: 100%;
+        text-align: center;
+        /* padding: 1rem 1rem; */
+        /* background-color: rgb(226, 226, 232); */
+        border-radius: 100%;
+        margin: 1.4rem;
+        /* overflow: hidden; */
+    }
+    .doctorimgs img{
+        width: 19rem;
+        /* margin: 1rem; */
+        /* padding-right: 0.5rem; */
+        background-color: rgb(235, 235, 237);
+        border-radius: 100%;
+       
+    }
+
+
+
+
+
+}
+@media (min-width:600px) and (max-width:1000px) {
+    .sec4maincontainer{
+        background-color: azure;
+    }
+    
+    .sec4container{
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+    .sec4container h2{
+        font-size: 3vw;
+        width: 45%;
+        margin: auto;
+        text-align: center;
+        padding: 1rem 0rem;
+    }
+    .sec4container p{
+        font-size: 1.3vw;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .sec4maincontainer{
+        padding: 3rem 0rem;
+    }
+    
+    .sec4doctorimgs{
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 0rem;
+        position: relative;
+        flex-wrap: wrap;
+    }
+    
+    .doctorimgs{
+        width: 20%;
+        margin: 2rem 0rem;
+        border-radius:100%;
+        overflow:hidden ;
+        background-color: #f7f7f9;
+    }
+    .doctorimgs img{
+        width: 100%;
+    }
+}
+@media (min-width:600px)  {
+    .sec4maincontainer{
+        background-color: azure;
+    }
+    
+    .sec4container{
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+    .sec4container h2{
+        font-size: 3vw;
+        width: 45%;
+        margin: auto;
+        text-align: center;
+        padding: 1rem 0rem;
+    }
+    .sec4container p{
+        font-size: 1.3vw;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .sec4maincontainer{
+        padding: 3rem 0rem;
+    }
+    
+    .sec4doctorimgs{
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 0rem;
+        position: relative;
+        flex-wrap: wrap;
+    }
+    
+    .doctorimgs{
+        width: 15%;
+        margin: 2rem 0rem;
+        border-radius:100%;
+        overflow:hidden ;
+        background-color: #f7f7f9;
+    }
+    .doctorimgs img{
+        width: 100%;
+    }
+}
+
