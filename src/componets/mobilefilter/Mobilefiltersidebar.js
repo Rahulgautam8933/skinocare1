@@ -1,5 +1,5 @@
 import React from 'react'
-import './Mobilefiltersidbar.css';
+
 import { Slider } from 'antd';
 const Mobilefiltersidebar = ({ close }) => {
     return (

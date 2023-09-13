@@ -1,5 +1,4 @@
 import React from 'react'
-import './Navbar.css'
 import navlogo from '../../img/logo.png'
 import { useNavigate } from 'react-router-dom'
 function Navbar({ openSidebar }) {
@@ -9,7 +8,7 @@ function Navbar({ openSidebar }) {
     const gotocart = () => {
         navigator('/check_out')
     }
-    const gotohome =()=>{
+    const gotohome = () => {
         navigator('/')
     }
 
@@ -18,13 +17,11 @@ function Navbar({ openSidebar }) {
         <>
 
             <div className="navbarcontainer">
-
                 <div className="navbarboxs">
                     <div className="navbarbox">
-                        <div onClick={gotohome}  className="navlogoimg">
+                        <div onClick={gotohome} className="navlogoimg">
                             <img src={navlogo} alt="" />
                         </div>
-
                     </div>
                     <div className="navbarbox">
                         <div className="navbarlinks">
@@ -46,43 +43,37 @@ function Navbar({ openSidebar }) {
                                 </li>
                             </ul>
                         </div>
-
                     </div>
-
                     <div className="navbarbox">
-
                         <div className="contactnavbox">
+                            <div className="navbarbutton">
+                                <button>Contact us</button>
+                            </div>
+                            <div className="cardbutton">
+                                <span onClick={gotocart} className="navlinbox">
+                                    <i class="fa-solid fa-cart-shopping navilogo "></i>
+                                </span>
+                            </div>
 
-                        <div className="navbarbutton">
-                        <button>Contact us</button>
-                    </div>
+                            <div className="profilesec">
 
-                    <div className="cardbutton">
-                    <span onClick={gotocart} className="navlinbox">
-                        <i class="fa-solid fa-cart-shopping navilogo "></i>
-                    </span>
-
-                    <i class="fa-regular fa-bell navilogo "></i>
-                </div>
-
-
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Profile name</option>
+                                    <option value="1">Sign up</option>
+                                    <option value="2">Sign in</option>
+                                    <option value="2">Contact us</option>
+        
+                                </select>
+                            </div>
                         </div>
-
-
-
                     </div>
-                  
-
                     <div className="navbarbox1">
                         <div onClick={openSidebar} className="navmenubar">
                             <i class="fa-solid fa-bars menulogo"></i>
                         </div>
-
                     </div>
-
                 </div>
             </div>
-
         </>
     )
 }

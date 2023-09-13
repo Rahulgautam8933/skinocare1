@@ -1,5 +1,5 @@
 import React from 'react'
-import './Footer.css'
+
 import footerlogo from '../../img/logo.png'
 import footerimglink from '../../img/download.png'
 import footerimglink1 from '../../img/download1.png'

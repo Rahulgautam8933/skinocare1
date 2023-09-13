@@ -1,5 +1,5 @@
 import React from 'react'
-import './Sec6.css'
+
 import sec6img from '../../img/sec6.png'
 import Imgcontent from '../imgcontent/Imgcontent'
 function Sec6() {

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Sidebar.css'
+
 function Backdrop({sidebar , closeback}) {
   return (
     <>

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Sec5.css';
+
 import Secheader from '../secheader/Secheader';
 import services1 from '../../img/services1.png'
 import services2 from '../../img/services2.png'

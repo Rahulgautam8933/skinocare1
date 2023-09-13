@@ -1,5 +1,5 @@
 import React from 'react'
-import './Sec3.css'
+
 import Secheader from '../secheader/Secheader';
 function Sec3() {
     const heading = "Why choose us";

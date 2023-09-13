@@ -1,10 +1,11 @@
 
-import './Shoppage.css'
+
 import Productitem from '../../componets/productitem/Productitem'
 import Productitem2 from '../../componets/productitem/Productitem2'
 import React, { useState } from 'react';
 import { Slider, Switch } from 'antd';
 import Mobilefiltersidebar from '../../componets/mobilefilter/Mobilefiltersidebar';
+import Navbar2 from '../../componets/navbar2/Navbar2';
 const Shoppage = () => {
 
     const [reverse, setReverse] = useState(true);
@@ -16,6 +17,7 @@ const Shoppage = () => {
 
     return (
         <>
+        <Navbar2/>
 
         {show? <Mobilefiltersidebar close = {closetab}  /> : ""}
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Secheader.css'
+
 
 function Secheader({heading,content}) {
   return (

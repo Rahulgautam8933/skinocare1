@@ -1,5 +1,5 @@
 import React from 'react'
-import './Product.css'
+
 import img1 from '../../img/imgswiper.png'
 import Productitems from '../../componets/productitems/Productitems'
 const Product = () => {

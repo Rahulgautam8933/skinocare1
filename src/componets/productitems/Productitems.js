@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Productitems.css"
+
 
 import img1 from '../../img/product1.jpg'
 import Productitem from '../productitem/Productitem'

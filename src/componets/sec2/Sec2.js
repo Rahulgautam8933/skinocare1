@@ -1,5 +1,5 @@
 import React from 'react'
-import './Sec2.css'
+
 import sec2cardimg1 from '../../img/sec2cardimg1.png'
 import sec2cardimg2 from '../../img/sec2cardimg2.png'
 import sec2cardimg3 from '../../img/sec2cardimg3.png'

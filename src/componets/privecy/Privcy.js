@@ -1,5 +1,5 @@
 import React from 'react'
-import './Privcy.css'
+
 const Privcy = () => {
     return (
         <>
