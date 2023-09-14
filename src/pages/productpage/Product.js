@@ -5,6 +5,7 @@ import Productitems from '../../componets/productitems/Productitems'
 import { useNavigate } from 'react-router-dom'
 import Productsidebar from '../../componets/productsidebar/Productsidebar'
 import ProductSidebar2 from '../../componets/productsidebar/ProductSidebar2'
+import Productsidebar3 from '../../componets/productsidebar/Productsidebar3'
 const Product = () => {
     const navigator = useNavigate();
     const [show,setShow] = useState(false);
@@ -14,13 +15,18 @@ const Product = () => {
     const closebutton1 = ()=>{
         setShow1(false);
     }
+    const closebutton2 = ()=>{
+        setShow2(false);
+    }
     const [show1,setShow1] = useState(false);
+    const [show2,setShow2] = useState(false);
 
     return (
         <>
 
         {show ? <Productsidebar close = {closebutton} /> : ""}
         {show1 ? <ProductSidebar2 close = { closebutton1}/> : ""}
+        {show2 ? <Productsidebar3 close = { closebutton2}/> : ""}
 
             <div className="productmaincontainer">
                 <div className="productcontainer">
@@ -119,14 +125,11 @@ const Product = () => {
                             <div class="accordion accordianbut" id='accordianbut' >
                                 <div class="accordion">
                                     <h2 class="accordion">
-                                        <button id='accordianbutton1' class="accordion-button collapsed  accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo12" aria-expanded="false" aria-controls="collapseTwo">
+                                        <button onClick={()=>setShow2(true)}   id='accordianbutton1' class="accordion-button collapsed  accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo12" aria-expanded="false" aria-controls="collapseTwo">
                                            4.8 Review(28)
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                          </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>

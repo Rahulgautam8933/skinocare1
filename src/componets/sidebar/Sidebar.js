@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 function Sidebar({sidebar, closeback}) {
 
@@ -18,7 +18,7 @@ function Sidebar({sidebar, closeback}) {
     </div>
 
     <ul>
-    <li><a href="/">About us</a></li>
+    <li><Link to="/">About us</Link></li>
     <li><a href="#sec3maincontainer">Our Expertise</a></li>
     <li> <a href="#sec7maincontainer">Testimonials</a> </li>
     <li> <a href="#sec6maincontainer">Skin & Hair</a> </li>

@@ -4,6 +4,10 @@ import React from 'react'
 import Button from '../button/Button'
 // import sec1img from '../../img/sec1img.png'
 function Imgcontent({ secimg, h1, p, secimg2, secimg3, secimg4, secimg5 }) {
+
+
+
+
   return (
     <>
 

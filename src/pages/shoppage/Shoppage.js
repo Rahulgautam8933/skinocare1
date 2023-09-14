@@ -386,7 +386,7 @@ const Shoppage = () => {
                         <div className="shoppagination">
 
                             <button onClick={() => (count === 1) ? setCount(1) : setCount(count - 1)} > <i class="zmdi zmdi-arrow-left"></i> Previous</button>
-                            <p><span className={count === 1 ? "countnumber" : ""}>1</span> <span className={count === 2 ? "countnumber" : ""} >2</span> <span className={count === 3 ? "countnumber" : ""} >3</span> <span className={count === 4 ? "countnumber" : ""} >4</span> <span className={count === 5 ? "countnumber" : ""} >5</span> </p>
+                            <p><span onClick={()=>setCount(1)}  className={count === 1 ? "countnumber" : ""}>1</span> <span onClick={()=>setCount(2)}  className={count === 2 ? "countnumber" : ""} >2</span> <span onClick={()=>setCount(3)} className={count === 3 ? "countnumber" : ""} >3</span> <span onClick={()=>setCount(4)} className={count === 4 ? "countnumber" : ""} >4</span> <span onClick={()=>setCount(5)}  className={count === 5 ? "countnumber" : ""} >5</span> </p>
 
                             <button onClick={() => setCount(count + 1)} >Next <i class="zmdi zmdi-arrow-right"></i>
                             </button>

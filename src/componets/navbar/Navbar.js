@@ -27,7 +27,7 @@ function Navbar({ openSidebar }) {
                         <div className="navbarlinks">
                             <ul>
                                 <li>
-                                    <a href="/">About us </a>
+                                    <Link to="/">About us </Link>
                                 </li>
                                 <li>
                                     <a href="#sec3maincontainer">Our Expertise  </a>
@@ -56,9 +56,6 @@ function Navbar({ openSidebar }) {
                             </div>
 
                             <div className="profilesec">
-
-                                
-
                                 <div class="accordion accordianbut" id='accordianbut1' >
                                 <div class="accordion">
                                     <h2 class="accordion">
