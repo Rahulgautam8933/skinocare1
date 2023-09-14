@@ -1,12 +1,12 @@
 import React from 'react'
 import navlogo from '../../img/logo.png'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 function Navbar({ openSidebar }) {
 
     const navigator = useNavigate();
 
     const gotocart = () => {
-        navigator('/check_out')
+        navigator('/cart')
     }
     const gotohome = () => {
         navigator('/')
@@ -27,19 +27,19 @@ function Navbar({ openSidebar }) {
                         <div className="navbarlinks">
                             <ul>
                                 <li>
-                                    <a href="#">About us </a>
+                                    <a href="/">About us </a>
                                 </li>
                                 <li>
-                                    <a href="#">Our Expertise  </a>
+                                    <a href="#sec3maincontainer">Our Expertise  </a>
                                 </li>
                                 <li>
-                                    <a href="#">Testimonials   </a>
+                                    <a href="#sec7maincontainer">Testimonials   </a>
                                 </li>
                                 <li>
-                                    <a href="#">Skin & Hair</a>
+                                    <a href="#sec6maincontainer">Skin & Hair</a>
                                 </li>
                                 <li>
-                                    <a href="#"> Shop</a>
+                                    <Link to="/shop_now"> Shop</Link>
                                 </li>
                             </ul>
                         </div>
@@ -49,7 +49,7 @@ function Navbar({ openSidebar }) {
                             <div className="navbarbutton">
                                 <button>Contact us</button>
                             </div>
-                            <div className="cardbutton">
+                            <div className="cardbutton1">
                                 <span onClick={gotocart} className="navlinbox">
                                     <i class="fa-solid fa-cart-shopping navilogo "></i>
                                 </span>
@@ -57,13 +57,27 @@ function Navbar({ openSidebar }) {
 
                             <div className="profilesec">
 
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Profile name</option>
-                                    <option value="1">Sign up</option>
-                                    <option value="2">Sign in</option>
-                                    <option value="2">Contact us</option>
-        
-                                </select>
+                                
+
+                                <div class="accordion accordianbut" id='accordianbut1' >
+                                <div class="accordion">
+                                    <h2 class="accordion">
+                                        <button id='accordianbutton12' class="accordion-button collapsed  accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo123" aria-expanded="false" aria-controls="collapseTwo">
+                                      <div className="navprofileimgbox">
+                                      <i class="fa-regular fa-user"></i>
+                                      </div>  Siddartha
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo123" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body profilebox1">
+                                        <p><i class="fa-regular fa-user"></i> </p>  
+                                        <p>Sign up </p>  
+                                        <p>Sign in</p>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             </div>
                         </div>
                     </div>

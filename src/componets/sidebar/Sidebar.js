@@ -18,11 +18,11 @@ function Sidebar({sidebar, closeback}) {
     </div>
 
     <ul>
-    <li>About us</li>
-    <li>Our Expertise</li>
-    <li>Testimonials</li>
-    <li>Skin & Hair</li>
-    <li>Shop</li>
+    <li><a href="/">About us</a></li>
+    <li><a href="#sec3maincontainer">Our Expertise</a></li>
+    <li> <a href="#sec7maincontainer">Testimonials</a> </li>
+    <li> <a href="#sec6maincontainer">Skin & Hair</a> </li>
+    <li  > <a href="/shop_now">Shop</a></li>
     </ul>
 
 

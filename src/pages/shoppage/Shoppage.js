@@ -6,20 +6,39 @@ import React, { useState } from 'react';
 import { Slider, Switch } from 'antd';
 import Mobilefiltersidebar from '../../componets/mobilefilter/Mobilefiltersidebar';
 import Navbar2 from '../../componets/navbar2/Navbar2';
+import Sidebar from '../../componets/sidebar/Sidebar';
+import Backdrop from '../../componets/sidebar/Backdrop';
 const Shoppage = () => {
 
     const [reverse, setReverse] = useState(true);
     const [count, setCount] = useState(1);
-    const [show,setShow] = useState(false);
-    const closetab = ()=>{
+    const [show, setShow] = useState(false);
+    const closetab = () => {
         setShow(false);
     }
 
+    
+  const [sidebar, setsidebar] = useState(false);
+
+  const toggleSidebar = () => {
+    // alert('ssfjhsfjsf');
+    setsidebar(true);
+
+  }
+
+  const close = () => {
+    setsidebar(false);
+  }
+
+
+
     return (
         <>
-        <Navbar2/>
+            <Navbar2 openSidebar={toggleSidebar} />
+            <Sidebar sidebar={sidebar} closeback={close} />
+            <Backdrop sidebar={sidebar} closeback={close} />
 
-        {show? <Mobilefiltersidebar close = {closetab}  /> : ""}
+            {show ? <Mobilefiltersidebar close={closetab} /> : ""}
 
             <div className="shoppagecontainer">
                 <div className="shoppageboxs">
@@ -27,39 +46,282 @@ const Shoppage = () => {
                     <div className="shoppagebox1">
 
                         <div className="shoppagecatagory">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Shop by Concern</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Shop by category</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Shop by product</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Shop All</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+
+                            <div class="accordion accordianbut" id='accordianbut12' >
+                                <div class="accordion  " id='accordianclass'>
+                                    <h2 class="accordion" id='bordercolor123'>
+                                        <button id='productshortbutton' class="accordion-button   accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo12345" aria-expanded="false" aria-controls="collapseTwo">
+                                            Shop by Concern
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo12345" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body shortbody">
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Popularity
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    New Arrivals
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Best Sellers
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Featured
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Alphabetically, A-Z
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Alphabetically, Z-A
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="accordion accordianbut" id='accordianbut12' >
+                                <div class="accordion  " id='accordianclass'>
+                                    <h2 class="accordion">
+                                        <button id='productshortbutton' class="accordion-button   accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwosort2" aria-expanded="false" aria-controls="collapseTwo">
+                                            Shop by category
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwosort2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body shortbody">
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Popularity
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    New Arrivals
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Best Sellers
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Featured
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Alphabetically, A-Z
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Alphabetically, Z-A
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="accordion accordianbut" id='accordianbut12' >
+                                <div class="accordion  " id='accordianclass'>
+                                    <h2 class="accordion">
+                                        <button id='productshortbutton' class="accordion-button   accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwosort3" aria-expanded="false" aria-controls="collapseTwo">
+                                            Shop by product
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwosort3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body shortbody">
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Popularity
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    New Arrivals
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Best Sellers
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Featured
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Alphabetically, A-Z
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Alphabetically, Z-A
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="accordion accordianbut" id='accordianbut12' >
+                                <div class="accordion  " id='accordianclass'>
+                                    <h2 class="accordion" id='bordercolor'>
+                                        <button id='productshortbutton' class="accordion-button   accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwosort4" aria-expanded="false" aria-controls="collapseTwo">
+                                            Shop All
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwosort4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body shortbody">
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Popularity
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    New Arrivals
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Best Sellers
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Featured
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Alphabetically, A-Z
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Alphabetically, Z-A
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
 
                         </div>
 
-                        <select class="form-select" id='sel' aria-label="Default select example">
-                            <option selected>Sort</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
+
+
+
+
+                        <div class="accordion accordianbut" id='accordianbut12' >
+                            <div class="accordion  " id='accordianclass'>
+                                <h2 class="accordion">
+                                    <button id='productshortbutton' class="accordion-button   accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Sort
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body shortbody">
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Popularity
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                New Arrivals
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Best Sellers
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Featured
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Alphabetically, A-Z
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Alphabetically, Z-A
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
 
                         <div className="shopselectrange">
                             <div className="shoprange">
@@ -93,7 +355,7 @@ const Shoppage = () => {
 
 
                         <div className="shopfilter">
-                            <h2 onClick={()=> setShow(true)} >Filter <i class="fa-solid fa-filter"></i> </h2>
+                            <h2 onClick={() => setShow(true)} >Filter <i class="fa-solid fa-filter"></i> </h2>
                         </div>
 
 

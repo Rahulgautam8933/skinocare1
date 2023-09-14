@@ -1,10 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import img1 from '../../img/imgswiper.png'
 import Productitems from '../../componets/productitems/Productitems'
+import { useNavigate } from 'react-router-dom'
+import Productsidebar from '../../componets/productsidebar/Productsidebar'
+import ProductSidebar2 from '../../componets/productsidebar/ProductSidebar2'
 const Product = () => {
+    const navigator = useNavigate();
+    const [show,setShow] = useState(false);
+    const closebutton = ()=>{
+        setShow(false);
+    }
+    const closebutton1 = ()=>{
+        setShow1(false);
+    }
+    const [show1,setShow1] = useState(false);
+
     return (
         <>
+
+        {show ? <Productsidebar close = {closebutton} /> : ""}
+        {show1 ? <ProductSidebar2 close = { closebutton1}/> : ""}
+
             <div className="productmaincontainer">
                 <div className="productcontainer">
                     <div className="productbox">
@@ -68,37 +85,56 @@ const Product = () => {
                         </div>
                         <div className="productitemscontainer">
                             <button className='cardbutton' id='addcard' >Add to cart</button>
-                            <button className='cardbutton ' id='buynow'>Buy Now</button>
+                            <button onClick={()=>navigator('/check_out')}  className='cardbutton ' id='buynow'>Buy Now</button>
                         </div>
                         <div className="productitemscontainer">
-                            <select class="form-select-1" >
-                                <option selected>Specification</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+
+                            <div class="accordion accordianbut" id='accordianbut' >
+                                <div class="accordion">
+                                    <h2 class="accordion">
+                                        <button onClick={()=>setShow(true)}  class="accordion-button collapsed  accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Specification
+                                        </button>
+                                    </h2>
+                                    
+                                </div>
+
+
+                            </div>
                         </div>
                         <div className="productitemscontainer">
-                            <select class="form-select-1" >
-                                <option selected>How to use?</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+
+                            <div class="accordion accordianbut" id='accordianbut' >
+                                <div class="accordion">
+                                    <h2 class="accordion">
+                                        <button onClick={()=>setShow1(true)}  id='accordianbutton1' class="accordion-button collapsed  accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo">
+                                            How to use?
+                                        </button>
+                                    </h2>
+                                   
+                                </div>
+                            </div>
                         </div>
-                        <div className="productitemscontainer">
-                            <select class="form-select-1" >
-                                <option selected> <span><i class="fa-solid fa-star"></i></span>  4.8 Review(28)</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+                        <div className="productitemscontainer" id='review'>
+                            <div class="accordion accordianbut" id='accordianbut' >
+                                <div class="accordion">
+                                    <h2 class="accordion">
+                                        <button id='accordianbutton1' class="accordion-button collapsed  accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo12" aria-expanded="false" aria-controls="collapseTwo">
+                                           4.8 Review(28)
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                 <Productitems heading = "Related Products" />
-                 <Productitems heading = "Recently viewed Products" />  
+                <Productitems heading="Related Products" />
+                <Productitems heading="Recently viewed Products" />
 
             </div>
         </>

@@ -8,13 +8,26 @@
 /* ====================================== */
 
 
-@media (min-width:0px) and (max-width:990px) {
+@media (min-width:0px) and (max-width:965px) {
+
+
+  #accordianbutton12{
+    background-color: transparent;
+    box-shadow: none;
+    color: black;
+  }
+
+
+  .profilesec{
+    display: none;
+  }
+
 
 .navsearchbox{
   display: none;
 }
 
-  .cardbutton{
+  .cardbutton1{
       display: none;
   }
 
@@ -25,6 +38,35 @@
       display: none;
   }
 
+  
+  
+  
+.navilogo{
+  /* background-color: blue; */
+  border: 1px solid black;
+  color: black;
+  font-size: 1.5vw;
+  padding: 0.5rem ;
+  width: 1rem;
+  height: 1rem;
+  margin: 0.3rem;
+  border-radius: 100%;
+}
+.navilogo:hover{
+ color: blue;
+}
+.contactnavbox{
+  display: flex;
+}
+.cardbutton{
+  margin: 0.5rem 1rem 0rem 1rem ;
+}
+
+
+
+  
+  
+  
   .navmenubar {
       background-color: #fcf9f3;
       /* background-color: rgb(211, 211, 216); */
@@ -100,7 +142,238 @@
 
 }
 
-@media (min-width:990px)  {
+@media (min-width:965px) and (max-width:1115px) {
+
+
+
+  #accordianbutton12{
+    background-color: transparent;
+    box-shadow: none;
+    color: black;
+  }
+
+  
+  .navilogo{
+    /* background-color: blue; */
+    border: 1px solid black;
+    color: black;
+    font-size: 1.5vw;
+    padding: 0.5rem ;
+    width: 1rem;
+    height: 1rem;
+    margin: 0.3rem;
+    border-radius: 100%;
+  }
+  .navilogo:hover{
+   color: blue;
+  }
+  .contactnavbox{
+    display: flex;
+  }
+  .cardbutton{
+    margin: 0.5rem 0.3rem 0rem 0.3rem ;
+  }
+  
+  
+  
+  
+    #accordianbutton12{
+      border: 1px solid ;
+      border-radius: 27px;
+      padding: 0.1rem 0.8rem;
+      margin-top: 0.3rem;
+    }
+  
+  
+    .profilebox1{
+      position: absolute;
+      background-color: white;
+      width: 100%;
+      box-shadow: 1px 1px 12px 1px rgb(221, 221, 227);
+    }
+  
+    .navprofileimgbox{
+      padding: 0.1rem 0.3rem;
+      border-radius: 27px;
+      border: 2px solid;
+      margin: 0.4rem;
+  
+    }
+  
+  
+  
+    .navbarbox1{
+        display: none;
+    }
+  
+  
+    .navmenubar{
+        display: none;
+    }
+  
+  .navbarcontainer{
+    box-shadow: 1px 1px 12px 1px rgb(156, 156, 175);
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+  
+  }
+  .navbarboxs{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 1.5rem 0.3rem;
+    align-items: center;
+    
+    
+  }
+  
+  .navbarlinks ul{
+    display: flex;
+  }
+  .navbarlinks ul li{
+    margin: 0.4rem;
+    list-style: none;
+  }
+  .navbarlinks ul a{
+    /* margin: 0.42em; */
+    text-decoration:none;
+    color: black;
+    font-weight: 500;
+  
+  }
+  
+  .navlogoimg{
+    width: 3.4rem;
+  }
+  .navlogoimg img{
+    width: 100%;
+  }
+  
+  
+  .navbarbutton button{
+    padding: 0.4rem 0.7rem;
+    border-radius: 35px;
+    /* background-color: #8e8e90; */
+    background-color:rgb(236, 222, 193);
+    color: black;
+    border: none;
+    font-size: 1.2rem;
+  
+  }
+  
+  .profilesec select{
+    border-radius: 27px;
+    margin-top: 0.4rem;
+  }
+  
+  .navbarbutton{
+    display: flex;
+    align-items: center;
+  }
+  .navbarprofile{
+    margin: 0rem 1rem;
+  }
+  .navbarprofile select{
+   border-radius: 27px;
+   font-size: 1.2rem;
+   /* padding: 0.4rem; */
+  }
+  .navbuttonback{
+    padding: 0.4rem 0.8rem;
+    border-radius: 27px;
+    border:1px solid #ecdec1;
+    margin: 0rem 0.4rem;
+  }
+  
+  .navsearchbox{
+    display: flex;
+      align-items: center;
+      width: 179%;
+      height: 43px;
+      border: 1px solid black;
+      border-radius: 27px;
+      overflow: hidden;
+  
+  }
+  .navsearchbox i{
+    padding: 1rem;
+  
+  }
+  .navsearchbox input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+  
+  }
+  
+
+
+}
+
+@media (min-width:1115px)  {
+
+  #accordianbutton12{
+    background-color: transparent;
+    box-shadow: none;
+    color: black;
+  }
+
+
+
+  
+.navilogo{
+  /* background-color: blue; */
+  border: 1px solid black;
+  color: black;
+  font-size: 1.5vw;
+  padding: 0.5rem ;
+  width: 1rem;
+  height: 1rem;
+  margin: 0.3rem;
+  border-radius: 100%;
+}
+.navilogo:hover{
+ color: blue;
+}
+.contactnavbox{
+  display: flex;
+}
+.cardbutton{
+  margin: 0.5rem 1rem 0rem 1rem ;
+}
+
+
+
+
+  #accordianbutton12{
+    border: 1px solid ;
+    border-radius: 27px;
+    padding: 0.1rem 0.8rem;
+    margin-top: 0.3rem;
+  }
+
+
+  .profilebox1{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    box-shadow: 1px 1px 12px 1px rgb(221, 221, 227);
+  }
+
+  .navprofileimgbox{
+    padding: 0.1rem 0.3rem;
+    border-radius: 27px;
+    border: 2px solid;
+    margin: 0.4rem;
+
+  }
+
+
 
   .navbarbox1{
       display: none;
@@ -141,7 +414,7 @@
   margin: 0.4rem;
   text-decoration:none;
   color: black;
-  font-weight: bold;
+  font-weight: 500;
 
 }
 
@@ -215,27 +488,6 @@
  
 }
 
-
-.navilogo{
-  /* background-color: blue; */
-  border: 1px solid black;
-  color: black;
-  font-size: 1.5vw;
-  padding: 0.5rem ;
-  width: 1rem;
-  height: 1rem;
-  margin: 0.3rem;
-  border-radius: 100%;
-}
-.navilogo:hover{
- color: blue;
-}
-.contactnavbox{
-  display: flex;
-}
-.cardbutton{
-  margin: 0rem 1rem ;
-}
 
 
 
@@ -731,6 +983,7 @@
   .sec5container1{
       width: 90%;
       margin: auto;
+      overflow-x: hidden;
   }
   .sec5containerboxs{
       display: flex;
@@ -882,6 +1135,186 @@
 /* sec6 */
 /* ============================= */
 
+@media (min-width:0px) and (max-width:600px) {
+  .sec6maincontainer{
+    background-color: #f0ffff;
+  }
+  
+  
+  .sec6boxs{
+    padding: 3rem 0rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  
+  .sec6box{
+    width: 95%;
+    position: relative;
+  }
+  .sec6box .sec6imgbox{
+    position: relative;
+    width: 100%;
+  }
+  .sec6box .sec6imgbox img{
+    width: 100%;
+    /* margin: 0rem 1rem; */
+  }
+  .sec6box .sec6imgbox .sec6img1{
+
+   margin-left: -8vw;
+    
+  }
+  .sec6box .sec6imgbox .sec6img2{
+   
+    position: absolute;
+    top: 0;
+    right: -6vw;
+  }
+
+  .sec6imgbox{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sec6box h2{
+    font-size: 4.7vw;
+    padding-bottom: 0.4rem;
+  }
+  .sec6box p{
+    font-size: 3.3vw;
+    padding-bottom: 0.4rem;
+  }
+  
+  
+  
+  
+  
+}
+@media (min-width:600px) and (max-width:1000px) {
+  .sec6maincontainer{
+    background-color: #f0ffff;
+  }
+  
+  
+  .sec6boxs{
+    padding: 3rem 0rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .sec6box{
+    width: 48%;
+    position: relative;
+  }
+  .sec6box .sec6imgbox{
+    position: relative;
+    width: 100%;
+  }
+  .sec6box .sec6imgbox img{
+    width: 100%;
+    /* margin: 0rem 1rem; */
+  }
+  .sec6box .sec6imgbox .sec6img1{
+
+   margin-left: -8vw;
+    
+  }
+  .sec6box .sec6imgbox .sec6img2{
+   
+    position: absolute;
+    top: 0;
+    right: -6vw;
+  }
+
+  .sec6imgbox{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sec6box h2{
+    font-size: 3.7vw;
+    padding-bottom: 0.4rem;
+  }
+  .sec6box p{
+    font-size: 1.5vw;
+    padding-bottom: 0.4rem;
+  }
+  
+  
+  
+  
+  
+}
+@media (min-width:1000px)  {
+  
+
+  
+  
+  .sec6maincontainer{
+    background-color: #f0ffff;
+  }
+  
+  
+  .sec6boxs{
+    padding: 3rem 0rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .sec6box{
+    width: 48%;
+    position: relative;
+  }
+  .sec6box .sec6imgbox{
+    position: relative;
+    width: 100%;
+  }
+  .sec6box .sec6imgbox img{
+    width: 100%;
+    /* margin: 0rem 1rem; */
+  }
+  .sec6box .sec6imgbox .sec6img1{
+
+   margin-left: -8vw;
+    
+  }
+  .sec6box .sec6imgbox .sec6img2{
+   
+    position: absolute;
+    top: 0;
+    right: -6vw;
+  }
+
+  .sec6imgbox{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+  .sec6box h2{
+    font-size: 3.7vw;
+    padding-bottom: 0.4rem;
+  }
+  .sec6box p{
+    font-size: 1.5vw;
+    padding-bottom: 0.4rem;
+  }
+  
+  
+  
+  
+  
+}
 
 
 /* ============================== */
@@ -1446,6 +1879,11 @@
   font-size: 1.3rem;
   margin: 0.6rem 2rem;
 }
+.sidebarlinks ul li a{
+  text-decoration: none;
+  color: black;
+  
+}
 
 .sidebarcardlink{
   padding-left: 4rem;
@@ -1555,8 +1993,9 @@
   .checkoutpagebase p{
       font-size: 3.9vw;
   }
-  .checkoutpagebase p span{
+  .checkoutpagebase p s{
       font-size: 2.9vw;
+      color: #98a2b3;
       
   }
   
@@ -1614,7 +2053,109 @@
       border: none;
   }
   }
-  @media (min-width:600px) {
+@media (min-width:600px) and (max-width:1000px) {
+    
+  .chaeckoutpagecontainer{
+    background-color: #fcf9f3;
+}
+
+.chaeckoutpagecontainer{
+   
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+}
+
+.checkoutpageboxs{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.checkoutpagebox{
+    width: 48%;
+
+}
+.checkoutpageboxheading{
+    display: flex;
+    justify-content: space-between;
+}
+.checkoutpageboxheading h3{
+   font-size: 1.6vw;
+}
+.checkoutpagebase{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0rem;
+}
+.checkoutpagebase p{
+    font-size: 1.8vw;
+}
+.checkoutpagebase p s{
+    font-size: 1.4vw;
+    color: #98a2b3;
+    
+}
+
+.checkboxsigninbutton{
+    padding-bottom: 1rem;
+}
+
+.forminput p{
+    font-size: 1.9vw;
+}
+
+.checkoutform{
+    padding-bottom:1rem;
+    border-bottom: 1px solid black;
+}
+.selectform{
+    width: 100%;
+    padding: 0.4rem;
+    border: none;
+    background-color: transparent;
+    font-size: 1.9vw;
+    font-weight: 500;
+    margin: 0.5rem 0rem;
+}
+.selectform h4{
+    padding: 1rem 0rem;
+}
+.applycupan{
+    display: flex;
+    justify-content: space-between;
+}
+.applycupan input{
+    width: 70%;
+    padding: 0.3rem;
+    border-radius: 12px;
+    border: none;
+}
+.applycupan span{
+    font-size: 1.9vw;
+    background-color: #d9f1e1;
+    border-radius: 27px;
+    padding: 0.6rem 1rem;
+
+}
+
+.checkoutform123{
+    margin: 2rem 0rem;
+}
+.checkoutform123 button{
+    width: 100%;
+    border-radius: 27px;
+    background-color: #d9f1e1;
+    padding: 0.7rem;
+    font-size: 1.9vw;
+    border: none;
+}
+
+
+  }
+
+  @media (min-width:1000px) {
       
   .chaeckoutpagecontainer{
       background-color: #fcf9f3;
@@ -1653,8 +2194,9 @@
   .checkoutpagebase p{
       font-size: 1.6vw;
   }
-  .checkoutpagebase p span{
+  .checkoutpagebase p s{
       font-size: 1.2vw;
+      color: #98a2b3;
       
   }
   
@@ -1711,6 +2253,7 @@
       font-size: 1.7vw;
       border: none;
   }
+
   }
 
 
@@ -1763,12 +2306,13 @@
       margin: 0.5rem 0rem;
   }
   .footerbox1box h3{
-      font-size: 4.5vw;
+      font-size: 4.9vw;
       padding-bottom: 0.5rem;
+      font-weight: 700;
   }
   .footerbox1box p{
       font-size: 1.14rem;
-      padding: 0.7rem 0rem;
+      /* padding: 0.7rem 0rem; */
       font-weight: 500;
   }
   .footerbox1box p:hover{
@@ -1803,12 +2347,95 @@
   }
   .footerimglink img{
       width: 100%;
+      border-radius: 7px;
   }
   .footerimglink img:hover{
       cursor: pointer;
   }
 }
-@media (min-width:600px)  {
+
+@media (min-width:600px) and (max-width:1000px) {
+    
+
+  .footerboxs{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    position: relative;
+    padding: 5rem 0rem;
+    width: 90%;
+    margin: auto;
+}
+
+.footerboximg{
+    width: 6rem;
+    /* margin: auto; */
+}
+.footerboximg img{
+    width: 100%;
+}
+
+.footerbox1boxs{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.footerbox{
+    width: 10%;
+    position: relative;
+
+}
+.footerbox1{
+    width: 83%;
+}
+.footerbox1box h3{
+    font-size: 2.2vw;
+    padding-bottom: 0.5rem;
+}
+.footerbox1box p{
+    font-size: 1.74vw;
+    /* padding: 0.7rem 0rem; */
+    font-weight: 500;
+}
+.footerbox1box p:hover{
+    cursor: pointer;
+    color: rgb(176, 176, 246);
+}
+.footerbox1box p i{
+    font-size: 1.3rem;
+    padding-right: 1rem;
+    /* color: rgb(149, 149, 153); */
+}
+
+.footerbox1boxsociallinks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ilogo{
+    font-size: 1.8rem;
+    margin: 0.6rem;
+    color: rgb(149, 149, 153);
+}
+.ilogo:hover{
+    cursor: pointer;
+    color: rgb(170, 170, 176);
+
+}
+
+.footerimglink{
+    width: 7rem;
+    margin: 0.4rem 0rem;
+}
+.footerimglink img{
+    width: 100%;
+    border-radius: 7px;
+}
+.footerimglink img:hover{
+    cursor: pointer;
+}
+}
+@media (min-width:1000px)  {
  
   
   .footerboxs{
@@ -1848,7 +2475,7 @@
   }
   .footerbox1box p{
       font-size: 1.14vw;
-      padding: 0.7rem 0rem;
+      /* padding: 0.7rem 0rem; */
       font-weight: 500;
   }
   .footerbox1box p:hover{
@@ -1883,6 +2510,7 @@
   }
   .footerimglink img{
       width: 100%;
+      border-radius: 7px;
   }
   .footerimglink img:hover{
       cursor: pointer;
@@ -1941,7 +2569,7 @@
 .sec1box p{
   font-size: 3.7vw;
   font-weight: bold;
-  padding-top: 3.5vw;
+  padding-top: 1.5vw;
   /* color: #bdd0f7; */
 }
 
@@ -2009,7 +2637,7 @@
 .sec1box p{
   font-size: 1.5vw;
   font-weight: bold;
-  padding-top: 3.5vw;
+  padding-top: 2.5vw;
 }
 
 .sec1button button{
@@ -2373,7 +3001,37 @@
 /* product */
 /* ==================================== */
 
+
+
 @media (min-width:0px) and (max-width:600px) {
+  
+
+  .accordianbut{
+    width: 100%;
+    border: none;
+    border-color: white;
+    
+  }
+
+  #accordianbut{
+    border-color: white;
+  }
+  #accordianbut button{
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: white;
+
+    box-shadow: none;
+    padding: 0rem;
+  }
+
+  #review{
+    border: none;
+  }
+
+
+  
+  
   .productcontainer{
       display: flex;
       justify-content: space-between;
@@ -2412,7 +3070,7 @@
   }
   .productitemscontainer{
       border-bottom: 2px solid black;
-      padding: 1.5rem 0rem;
+      padding: 0.3rem 0rem;
   }
   
   .form-select-1{
@@ -2471,6 +3129,7 @@
   }
   #addcard{
       background-color: #d9f1e1;
+      border: none;
   }
   #buynow{
       background-color: #eeb6a5;
@@ -2488,6 +3147,35 @@
   }
 }
 @media (min-width:600px) and (max-width:1000px) {
+  
+
+  .accordianbut{
+    width: 100%;
+    border: none;
+    border-color: white;
+    
+  }
+
+  #accordianbut{
+    border-color: white;
+  }
+  #accordianbut button{
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: white;
+
+    box-shadow: none;
+    padding: 0rem;
+  }
+
+  #review{
+    border: none;
+  }
+
+
+
+
+  
   .productcontainer{
       display: flex;
       justify-content: space-between;
@@ -2584,6 +3272,7 @@
   }
   #addcard{
       background-color: #d9f1e1;
+      border: none;
   }
   #buynow{
       background-color: #eeb6a5;
@@ -2601,6 +3290,38 @@
   }
 }
 @media (min-width:1000px)  {
+
+
+  .accordianbut{
+    width: 100%;
+    border: none;
+    border-color: white;
+    
+  }
+
+  #accordianbut{
+    border-color: white;
+  }
+  #accordianbut button{
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: white;
+
+    box-shadow: none;
+    padding: 0rem;
+  }
+
+  #review{
+    border: none;
+  }
+
+
+
+
+
+
+
+
   .productcontainer{
       display: flex;
       justify-content: space-between;
@@ -2697,6 +3418,7 @@
   }
   #addcard{
       background-color: #d9f1e1;
+      border: none;
   }
   #buynow{
       background-color: #eeb6a5;
@@ -2714,12 +3436,49 @@
   }
 }
 
+
+
 /* ========================== */
 /* shoppage */
 /* ========================== */
 
 
 @media (min-width:0px) and (max-width:600px) {
+
+
+
+  #accordianclass{
+    background-color: white;
+    border-radius: 27px;
+  border: 1px solid;
+  margin: 1rem 0rem;
+
+ 
+}
+
+#productshortbutton:focus{
+  border: none;
+  box-shadow: none;
+
+}
+
+
+
+
+#accordianbut12 button{
+  font-size: 1.5vw;
+  padding: 0.4rem 0.8rem;
+  background-color: transparent;
+  border-color: transparent;
+}
+#accordianbut12 button:focus{
+  
+  border-color: white;
+}
+
+
+
+
 
   .shoppageboxs {
       display: flex;
@@ -2834,6 +3593,51 @@
 
 @media (min-width:600px) and (max-width:1000px) {
 
+
+
+
+  .shortbody{
+    /* border: 1px solid; */
+  }
+
+
+  #accordianclass{
+    background-color: white;
+    border-radius: 27px;
+  border: 1px solid;
+  margin: 1rem 0rem;
+
+ 
+}
+
+#productshortbutton:focus{
+  border: none;
+  box-shadow: none;
+
+}
+
+
+#productshortbutton{
+  /* border: 1px solid; */
+  /* border-radius: 27px; */
+  /* padding: 1rem 0rem; */
+  
+}
+
+#accordianbut12 button{
+  font-size: 1.5vw;
+  padding: 0.4rem 0.8rem;
+  background-color: transparent;
+  border-color: transparent;
+}
+#accordianbut12 button:focus{
+  
+  border-color: white;
+}
+
+
+
+
   .shoppageboxs {
       display: flex;
       justify-content: space-between;
@@ -2932,6 +3736,49 @@
 
 @media (min-width:1000px) {
 
+
+
+#bordercolor123{
+  border-color: none;
+}
+
+
+  #accordianclass{
+    background-color: white;
+    border-radius: 27px;
+  border: 1px solid;
+  margin: 1rem 0rem;
+
+ 
+}
+
+#productshortbutton:focus{
+  border: none;
+  box-shadow: none;
+
+}
+
+
+#productshortbutton{
+  /* border: 1px solid; */
+  /* border-radius: 27px; */
+  /* padding: 1rem 0rem; */
+  
+}
+
+#accordianbut12 button{
+  font-size: 1.5vw;
+  padding: 0.4rem 0.8rem;
+  background-color: transparent;
+  border-color: transparent;
+}
+#accordianbut12 button:focus{
+  
+  border-color: white;
+}
+
+
+
   .shoppageboxs {
       display: flex;
       justify-content: space-between;
@@ -2945,6 +3792,7 @@
       background-color: #fcf7ee;
       padding: 1rem;
       border-radius: 12px;
+      width: 19rem;
 
   }
 
@@ -3033,11 +3881,349 @@
 
 
 
+/* =============================== */
+/* cart */
+/* =============================== */
+
+
+
+@media (min-width:0px) and (max-width:600px) {
+  
+.cartmaincontainer{
+  background-color: #fcfaf6;
+}
+
+.cartboxs1{
+  /* padding: 5rem 0rem; */
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  width: 90%;
+  margin: auto;
+
+}
+
+.cardbox1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 1rem;
+  /* border-radius: 12px; */
+  position: relative;
+}
+
+.cartimgbox{
+  width: 19%;
+}
+.cartimgbox img{
+  width: 100%;
+}
+
+.cartheding{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cartcontentbox{
+  width: 75%;
+  margin: 0.4rem;
+}
+
+.cartheding h3{
+  font-size: 4vw;
+}
+
+.cartheding button{
+  padding: 0rem 0.8rem;
+  margin: 1rem 0rem;
+  border-radius: 27px;
+  background-color: white;
+  font-size: 4vw;
+ 
+}
+
+.cartheding1 p{
+  font-size: 3.8vw;
+}
+
+.cartheding button span{
+  font-size: 4vw;
+  margin: 0rem 1vw;
+}
+
+.cartheding1 h2 span s{
+  font-size: 0.7rem;
+  color: #525e6f;
+
+}
+.cartheding1 p{
+ color: #525e6f;
+
+}
+.cartheding p{
+  background-color: #34c759;
+  border-radius: 27px;
+  padding: 0.1rem 0.4rem;
+  color: white;
+  font-size: 3.6vw;
+}
+
+.cartheding1 h2{
+  font-size: 4vw;
+}
 
 
 
 
 
+}
+
+@media (min-width:600px) and (max-width:1000px) {
+  
+.cartmaincontainer{
+  background-color: #fcfaf6;
+}
+
+.cartboxs1{
+  /* padding: 5rem 0rem; */
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  width: 90%;
+  margin: auto;
+
+}
+
+.cardbox1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 1rem;
+  /* border-radius: 12px; */
+  position: relative;
+}
+
+.cartimgbox{
+  width: 19%;
+}
+.cartimgbox img{
+  width: 100%;
+}
+
+.cartheding{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cartcontentbox{
+  width: 75%;
+  margin: 0.4rem;
+}
+
+.cartheding h3{
+  font-size: 2.4vw;
+}
+
+.cartheding button{
+  padding: 0rem 0.8rem;
+  margin: 1rem 0rem;
+  border-radius: 27px;
+  background-color: white;
+  font-size: 2vw;
+ 
+}
+
+.cartheding1 p{
+  font-size: 2.2vw;
+}
+
+.cartheding button span{
+  font-size: 2vw;
+  margin: 0rem 1vw;
+}
+
+.cartheding1 h2 span s{
+  font-size: 1.1rem;
+  color: #525e6f;
+
+}
+.cartheding1 p{
+ color: #525e6f;
+
+}
+.cartheding p{
+  background-color: #34c759;
+  border-radius: 27px;
+  padding: 0.1rem 0.4rem;
+  color: white;
+}
 
 
 
+
+
+}
+
+@media (min-width:1000px) {
+  
+.cartmaincontainer{
+  background-color: #fcfaf6;
+}
+
+.cartboxs1{
+  /* padding: 5rem 0rem; */
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  width: 90%;
+  margin: auto;
+
+}
+
+.cardbox1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 1rem;
+  /* border-radius: 12px; */
+  position: relative;
+}
+
+.cartimgbox{
+  width: 19%;
+}
+.cartimgbox img{
+  width: 100%;
+}
+
+.cartheding{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cartcontentbox{
+  width: 75%;
+  margin: 0.4rem;
+}
+
+.cartheding h3{
+  font-size: 2.4vw;
+}
+
+.cartheding button{
+  padding: 0rem 0.8rem;
+  margin: 1rem 0rem;
+  border-radius: 27px;
+  background-color: white;
+  font-size: 2vw;
+ 
+}
+
+.cartheding1 p{
+  font-size: 2.2vw;
+}
+
+.cartheding button span{
+  font-size: 2vw;
+  margin: 0rem 1vw;
+}
+
+.cartheding1 h2 span s{
+  font-size: 1.1rem;
+  color: #525e6f;
+
+}
+.cartheding1 p{
+ color: #525e6f;
+
+}
+.cartheding p{
+  background-color: #34c759;
+  border-radius: 27px;
+  padding: 0.1rem 0.4rem;
+  color: white;
+}
+
+
+
+
+
+}
+
+
+
+
+/* ===================================== */
+/* productsidbar */
+/* ===================================== */
+
+@media (min-width:0px) and (max-width:600px)  {
+  .productsidebarmaincontainer{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    color: black;
+    box-shadow: 1px 1px 12px 1px rgb(215, 215, 223);
+    padding: 2rem;
+  }
+  
+  
+  .closebutton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width:600px) and (max-width:1000px)  {
+  .productsidebarmaincontainer{
+    background-color: white;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    color: black;
+    box-shadow: 1px 1px 12px 1px rgb(215, 215, 223);
+    padding: 2rem;
+  }
+  
+  
+  .closebutton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width:1000px)   {
+  .producsidbarboxs{
+    text-align: justify;
+  }
+
+  .closebutton{
+    font-size: 1.8rem;
+  }
+  .productsidebarmaincontainer{
+    background-color: #fcfaf6;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    color: black;
+    box-shadow: 1px 1px 12px 1px rgb(215, 215, 223);
+    padding: 2rem;
+  }
+  
+  
+  .closebutton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

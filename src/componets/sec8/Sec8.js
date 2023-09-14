@@ -2,14 +2,13 @@ import React from 'react'
 
 import product1 from '../../img/product1.jpg'
 import product2 from '../../img/product2.jpg'
-import product3 from '../../img/product3.jpg'
-import product4 from '../../img/product4.jpg'
+
 import Button from '../button/Button'
 import { useNavigate } from 'react-router-dom'
 function Sec8() {
     const navigator = useNavigate();
     const gotoproduct = ()=>{
-        navigator('/product')
+        navigator('/shop_now')
     }
     return (
         <>

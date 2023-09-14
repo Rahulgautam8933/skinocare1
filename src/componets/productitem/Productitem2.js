@@ -1,7 +1,9 @@
 import React from 'react'
 
 import img1 from '../../img/product1.jpg'
+import { useNavigate } from 'react-router-dom'
 const Productitem2 = () => {
+    const navigator = useNavigate();
     return (
         <>
 
@@ -16,7 +18,7 @@ const Productitem2 = () => {
                     <h3>Rs. 587 <s>Rs.587</s></h3>
 
                     <div className="productbutton12">
-                        <button>Add to cart <i class="zmdi zmdi-shopping-basket"></i> </button>
+                        <button onClick={()=> navigator('/product')} >Add to cart <i class="zmdi zmdi-shopping-basket"></i> </button>
                     </div>
 
                 </div>
