@@ -3,19 +3,12 @@ import navlogo from '../../img/logo.png'
 import { Link, useNavigate } from 'react-router-dom'
 function Navbar({ openSidebar }) {
 
-    const navigator = useNavigate();
-
-    const gotocart = () => {
-        navigator('/cart')
-    }
+    const navigator = useNavigate();   
     const gotohome = () => {
         navigator('/')
     }
-
-
     return (
         <>
-
             <div className="navbarcontainer">
                 <div className="navbarboxs">
                     <div className="navbarbox">
@@ -49,33 +42,9 @@ function Navbar({ openSidebar }) {
                             <div className="navbarbutton">
                                 <button>Contact us</button>
                             </div>
-                            <div className="cardbutton1">
-                                <span onClick={gotocart} className="navlinbox">
-                                    <i class="fa-solid fa-cart-shopping navilogo "></i>
-                                </span>
-                            </div>
+                           
 
-                            <div className="profilesec">
-                                <div class="accordion accordianbut" id='accordianbut1' >
-                                <div class="accordion">
-                                    <h2 class="accordion">
-                                        <button id='accordianbutton12' class="accordion-button collapsed  accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo123" aria-expanded="false" aria-controls="collapseTwo">
-                                      <div className="navprofileimgbox">
-                                      <i class="fa-regular fa-user"></i>
-                                      </div>  Siddartha
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo123" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body profilebox1">
-                                        <p><i class="fa-regular fa-user"></i> </p>  
-                                        <p>Sign up </p>  
-                                        <p>Sign in</p>  
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            </div>
+                           
                         </div>
                     </div>
                     <div className="navbarbox1">

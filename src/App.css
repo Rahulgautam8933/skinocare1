@@ -136,6 +136,7 @@
 
   .navlogoimg img {
     width: 100%;
+   
   }
 
 
@@ -268,6 +269,7 @@
 
   .navlogoimg img {
     width: 100%;
+   
   }
 
 
@@ -460,6 +462,7 @@
 
   .navlogoimg img {
     width: 100%;
+    
   }
 
 
@@ -604,6 +607,7 @@
 
   .sec2containerbox2 img {
     width: 100%;
+   
   }
 
   .sec2cardbox {
@@ -636,10 +640,8 @@
   }
 
   .sec2cardimg img {
-    width: 100%;
-    /* margin: 0.3rem; */
+    width: 100%;    
   }
-
 }
 
 @media (min-width:600px) {
@@ -677,12 +679,12 @@
   }
 
   .sec2mainimg {
-    /* padding: 2rem; */
     margin: 2rem;
   }
 
   .sec2containerbox2 img {
     width: 100%;
+   
   }
 
   .sec2cardbox p {
@@ -711,7 +713,6 @@
 
   .sec2cardimg img {
     width: 100%;
-    /* margin: 0.3rem; */
   }
 
 }
@@ -720,6 +721,12 @@
 /* ============================== */
 /* sec3 */
 /* ============================= */
+
+
+
+#sec3maincontainer{
+  padding-top: 4rem;
+}
 
 
 .sec3maincontainer {
@@ -748,7 +755,6 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  /* padding: 1rem; */
   margin: 3rem 0rem;
 
 }
@@ -814,33 +820,25 @@
   .sec4doctorimgs {
     display: flex;
     overflow: auto;
-    /* justify-content: space-between; */
   }
 
   .doctorimgs {
     width: 100%;
     text-align: center;
-    /* padding: 1rem 1rem; */
-    /* background-color: rgb(226, 226, 232); */
     border-radius: 100%;
     margin: 1.4rem;
-    /* overflow: hidden; */
   }
 
   .doctorimgs img {
     width: 19rem;
-    /* margin: 1rem; */
-    /* padding-right: 0.5rem; */
     background-color: rgb(235, 235, 237);
     border-radius: 100%;
 
   }
 
 
-
-
-
 }
+
 
 @media (min-width:600px) and (max-width:1000px) {
   .sec4maincontainer {
@@ -890,6 +888,7 @@
 
   .doctorimgs img {
     width: 100%;
+   
   }
 }
 
@@ -941,6 +940,7 @@
 
   .doctorimgs img {
     width: 100%;
+    
   }
 }
 
@@ -961,11 +961,9 @@
 
   .sec5containerboxs {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    /* overflow: auto; */
   }
 
   .sec5containerbox {
@@ -986,7 +984,7 @@
 
   .sec5boximg img {
     width: 100%;
-    border-radius: 100%;
+    border-radius: 100%; 
   }
 
   .sec5boxcontent {
@@ -1004,7 +1002,6 @@
     font-weight: 100;
   }
 
-
 }
 
 @media (min-width:600px) and (max-width:840px) {
@@ -1017,7 +1014,6 @@
 
   .sec5containerboxs {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
@@ -1257,7 +1253,6 @@
 
   .sec6box .sec6imgbox img {
     width: 100%;
-    /* margin: 0rem 1rem; */
   }
 
   .sec6box .sec6imgbox .sec6img1 {
@@ -1321,7 +1316,6 @@
 
   .sec6box .sec6imgbox img {
     width: 100%;
-    /* margin: 0rem 1rem; */
   }
 
   .sec6box .sec6imgbox .sec6img1 {
@@ -1351,9 +1345,6 @@
     font-size: 1.5vw;
     padding-bottom: 0.4rem;
   }
-
-
-
 
 
 }
@@ -1552,14 +1543,10 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
-
-
   }
 
   .testimonialgroupimg img {
     width: 100%;
-
-
   }
 
 }
@@ -1852,9 +1839,12 @@
 @media (min-width:1000px) {
 
 
-
+#sec7maincontainer{
+  padding-top: 4rem;
+}
   .sec8maincontainer {
     background-color: #fdfcf9;
+    /* padding-top:5rem; */
   }
 
   .sec8container {
@@ -2676,6 +2666,12 @@
 }
 
 @media (min-width:1000px) {
+
+
+
+  .footermaincontainer{
+    position: relative;
+  }
 
 
   .footerboxs {
@@ -3861,6 +3857,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  
   }
 
   .shoppagination button {
@@ -4129,10 +4126,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 91%;
+    margin: 1rem;
+    
   }
 
   .shoppagination button {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     padding: 0.4rem 1rem;
     border-radius: 12px;
     background-color: white;
@@ -4257,7 +4257,7 @@
     border-radius: 27px;
     padding: 0.1rem 0.4rem;
     color: white;
-    font-size: 3.6vw;
+    font-size: 1.6vw;
   }
 
   .cartheding1 h2 {
@@ -4280,10 +4280,12 @@
     /* padding: 5rem 0rem; */
     padding-top: 6rem;
     padding-bottom: 2rem;
-    width: 90%;
+    /* width: 90%; */
     margin: auto;
 
   }
+
+  
 
   .cardbox1 {
     display: flex;
@@ -4315,7 +4317,7 @@
   }
 
   .cartheding h3 {
-    font-size: 2.4vw;
+    font-size: 1.8vw;
   }
 
   .cartheding button {
@@ -4328,7 +4330,7 @@
   }
 
   .cartheding1 p {
-    font-size: 2.2vw;
+    font-size: 1.8vw;
   }
 
   .cartheding button span {
@@ -4339,6 +4341,11 @@
   .cartheding1 h2 span s {
     font-size: 1.1rem;
     color: #525e6f;
+
+  }
+  .cartheding1 h2  {
+    font-size: 1.5rem;
+    /* color: #525e6f; */
 
   }
 
@@ -4352,6 +4359,7 @@
     border-radius: 27px;
     padding: 0.1rem 0.4rem;
     color: white;
+    font-size: 0.7rem;
   }
 
 
@@ -4391,6 +4399,7 @@
 
   .cartimgbox img {
     width: 100%;
+  
   }
 
   .cartheding {
@@ -4405,7 +4414,7 @@
   }
 
   .cartheding h3 {
-    font-size: 2.4vw;
+    font-size: 1.5vw;
   }
 
   .cartheding button {
@@ -4413,22 +4422,27 @@
     margin: 1rem 0rem;
     border-radius: 27px;
     background-color: white;
-    font-size: 2vw;
+    font-size: 1.5vw;
 
   }
 
   .cartheding1 p {
-    font-size: 2.2vw;
+    font-size: 1.2vw;
   }
 
   .cartheding button span {
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin: 0rem 1vw;
   }
 
   .cartheding1 h2 span s {
     font-size: 1.1rem;
     color: #525e6f;
+
+  }
+  .cartheding1 h2  {
+    font-size: 1.2rem;
+   
 
   }
 

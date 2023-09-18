@@ -9,6 +9,12 @@ function Footer() {
 
       <div className="footermaincontainer">
 
+        <div className="footergouplogo">
+          <div className="gouplogo">
+            <i class="zmdi zmdi-long-arrow-up"></i>
+          </div>
+        </div>
+
         <div className="footercontainer">
           <div className="footerboxs">
             <div className="footerbox">

@@ -49,11 +49,6 @@ function App() {
 
       </Routes>
 
-
-
-
-
-
       <Footer />
 
 

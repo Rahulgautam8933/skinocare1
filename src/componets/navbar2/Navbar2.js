@@ -1,14 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import navlogo from '../../img/logo.png'
 
 import { useNavigate } from 'react-router-dom';
+
+import Cart from '../cart/Cart';
 const Navbar2 = ({ openSidebar }) => {
 
     const navigator = useNavigate();
+    const [show3, setShow3] = useState(false);
+    const closebutton3 = () => {
+        setShow3(false);
+    }
 
     return (
         <>
+
+            {show3 ? <Cart close={closebutton3} /> : ""}
+
+
             <div className="navbarcontainer">
                 <div className="navbarboxs">
                     <div className="navbarbox">
@@ -26,7 +36,7 @@ const Navbar2 = ({ openSidebar }) => {
                     </div>
                     <div className="navbarbox">
                         <div className="navbarbutton">
-                            <div className="navbuttonback">
+                            <div onClick={() => setShow3(true)} className="navbuttonback">
                                 <i class="zmdi zmdi-shopping-basket"></i>
                             </div>
                             <div className="navbuttonback">
@@ -34,9 +44,8 @@ const Navbar2 = ({ openSidebar }) => {
                             </div>
 
 
-                            <div className="navbarprofile">
-
-                                <div class="accordion accordianbut" id='accordianbut' >
+                            <div className="profilesec">
+                                <div class="accordion accordianbut" id='accordianbut1' >
                                     <div class="accordion">
                                         <h2 class="accordion">
                                             <button id='accordianbutton12' class="accordion-button collapsed  accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo123" aria-expanded="false" aria-controls="collapseTwo">
@@ -54,6 +63,7 @@ const Navbar2 = ({ openSidebar }) => {
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
 
@@ -68,5 +78,6 @@ const Navbar2 = ({ openSidebar }) => {
         </>
     )
 }
+
 
 export default Navbar2

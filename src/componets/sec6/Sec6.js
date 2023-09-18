@@ -29,21 +29,16 @@ function Sec6() {
         <div className="sec6imgbox">
         <img src={sec6img} alt="" />
           </div>
-
       </div>
     </div>
-
-
-
-  </div>
-    
-    
+  </div>  
+  
+  <div ></div>
+  
     </div>
 
-     
 
-    
-
+   
 
     </>
   )
