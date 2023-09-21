@@ -1,32 +1,26 @@
 import React from 'react'
-
-import img1 from '../../img/product1.jpg'
+import './Productitem.css'
+import img1 from '../../img/product5.png'
+import basket from '../../img/basket.png'
 const Productitem = () => {
-  return (
-    <>
+    return (
+        <>
 
-    <div className="productbox1">
-
-    <div className="productimg1">
-        <img src={img1} alt="" />
-    </div>
-    <div className="productcontent">
-        <p>Gentle Cleanse Face
-            Foam</p>
-        <h3>Rs. 587 <s>Rs.587</s></h3>
-
-        <div className="productbutton1">
-            <button>Add to cart</button>
-        </div>
-
-    </div>
-
-
-
-</div>
-      
-    </>
-  )
+            <div className="productbox123">
+                <div className="productimg12">
+                    <img src={img1} alt="" />
+                </div>
+                <div className="productcontent2">
+                    <p>Gentle Cleanse Face
+                        Foam</p>
+                    <h3>Rs. 587 <s>Rs.587</s></h3>
+                </div>
+                <div className="productbutton12">
+                    <button><span>Add to cart</span> <img src={basket} alt="" /> </button>
+                </div>
+            </div>
+        </>
+    )
 }
 
 export default Productitem

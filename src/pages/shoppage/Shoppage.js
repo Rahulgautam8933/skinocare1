@@ -376,7 +376,6 @@ const Shoppage = () => {
                             </div>
                         }
 
-
                         <div className="shoppagination">
 
                             <button onClick={() => (count === 1) ? setCount(1) : setCount(count - 1)} > <i className="zmdi zmdi-arrow-left"></i> Previous</button>

@@ -1,5 +1,6 @@
 import React from 'react'
 
+import './Checkoutpage.css'
 const Checkoutpage = () => {
     return (
         <>
@@ -46,21 +47,129 @@ const Checkoutpage = () => {
 
                         <div className="checkoutform">
 
-                            <select className='selectform'>
-                                <option selected>Contact details</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+
+                            <div className="accordion accordianbut" id='accordianbut12' >
+                                <div className="accordion  " id='accordianclass2'>
+                                    <h2 className="accordion" id='bordercolor123'>
+                                        <button id='productshortbutton' className="accordion-button   accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo123456" aria-expanded="false" aria-controls="collapseTwo">
+                                            Contact details
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo123456" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div className="accordion-body shortbody">
+
+                                        <form class="row g-3">
+                                        <div class="col-md-12">
+                                          <label for="inputEmail4" class="form-label">Full Name</label>
+                                          <input type="text" class="form-control" id="inputEmail4"/>
+                                        </div>
+                                        <div class="col-md-12">
+                                          <label for="inputPassword4" class="form-label">Phone Number</label>
+                                          <input type="number" class="form-control" id="inputPassword4"/>
+                                        </div>
+                                        <div class="col-md-12">
+                                          <label for="inputPassword4" class="form-label">Alternative Phone Number</label>
+                                          <input type="number" class="form-control" id="inputPassword4"/>
+                                        </div>
+                                        <div class="col-md-12">
+                                          <label for="inputPassword4" class="form-label">Email</label>
+                                          <input type="email" class="form-control" id="inputPassword4"/>
+                                        </div>
+                                        
+                                      </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className="checkoutform">
+                            <div className="accordion accordianbut" id='accordianbut12' >
+                                <div className="accordion  " id='accordianclass2'>
+                                    <h2 className="accordion" id='bordercolor123'>
+                                        <button id='productshortbutton' className="accordion-button   accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1234567" aria-expanded="false" aria-controls="collapseTwo">
+                                            Shipping Address
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo1234567" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div className="accordion-body shortbody">
 
-                            <select className='selectform'>
-                                <option selected>Shipping address</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+                                            <form class="row g-3">
+                                                <div class="col-md-6">
+                                                    <label for="inputState" class="form-label">Country</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Enter</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputState" class="form-label">State</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Enter</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputState" class="form-label">District</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Enter</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputState" class="form-label">Pincode</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Enter</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputState" class="form-label">City</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Enter</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputState" class="form-label">Area</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Enter</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputState" class="form-label">Street name/Number</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Enter</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputState" class="form-label">Door no</label>
+                                                    <select id="inputState" class="form-select" placeholder='enter' >
+                                                        <option selected> Enter</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+
+
+
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck" />
+                                                        <label class="form-check-label" for="gridCheck">
+                                                            Check me out
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
                         </div>
 
                         <div className="checkoutform">
@@ -89,20 +198,20 @@ const Checkoutpage = () => {
                         </div>
                         <div className="checkoutform12">
 
-                           <p>Coupon code</p>
-                           <div className="applycupan">
-                           <input type="text"  placeholder=' Enter here' />
-                           <span>Apply</span>
-                           
-                           </div>
-                           <p>You can only use one discount code per order</p>
+                            <p>Coupon code</p>
+                            <div className="applycupan">
+                                <input type="text" placeholder=' Enter here' />
+                                <span>Apply</span>
+
+                            </div>
+                            <p>You can only use one discount code per order</p>
 
 
 
                         </div>
                         <div className="checkoutform123">
 
-                          <button>Proseed to pay</button>
+                            <button>Proseed to pay</button>
 
                         </div>
 

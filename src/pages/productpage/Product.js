@@ -38,13 +38,9 @@ const Product = () => {
                 <div className="productcontainer">
                     <div className="productbox">
 
-
                         <div className="procductimgslider">
                             <Productslider />
                         </div>
-
-
-
                     </div>
                     <div className="productbox">
                         <h2>Gentle Cleanse Face Foam</h2>
@@ -107,6 +103,7 @@ const Product = () => {
                 </div>
 
                 <Productitems heading="Related Products" />
+                
                 <Productitems heading="Recently viewed Products" />
 
             </div>

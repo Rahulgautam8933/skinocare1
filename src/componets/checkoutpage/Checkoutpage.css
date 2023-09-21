@@ -1,0 +1,19 @@
+#accordianbut123{
+    background-color: blue;
+}
+
+#accordianclass2{
+    background: var(--foundation-sec-cream-light-hover, #FCFAF6);
+}
+#accordianclass2 {
+   
+    --bs-accordion-border-color: transparent;
+}
+#accordianclass2 button{
+    border: none;
+    border-color: transparent;
+}
+#bordercolor123{
+    --bs-accordion-border-color: transparent;
+
+}
