@@ -32,8 +32,6 @@ const Product = () => {
     const [show3, setShow3] = useState(false);
 
 
-
-
     return (
         <>
 

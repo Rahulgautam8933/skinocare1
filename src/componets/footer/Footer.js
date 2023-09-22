@@ -3,6 +3,7 @@ import React from 'react'
 import footerlogo from '../../img/logo.png'
 import footerimglink from '../../img/download.png'
 import footerimglink1 from '../../img/download1.png'
+import goup from '../../img/right-arrow.svg'
 function Footer() {
   return (
     <>
@@ -11,7 +12,7 @@ function Footer() {
 
         <div className="footergouplogo">
           <div className="gouplogo">
-            <i class="zmdi zmdi-long-arrow-up"></i>
+        <a href="#home">  <img src={goup} alt="" /></a>
           </div>
         </div>
 

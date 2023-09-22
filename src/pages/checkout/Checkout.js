@@ -7,10 +7,10 @@ const Checkout = () => {
   return (
     <>
 
-    
     <Checkoutpage/>
     <Privcy/>
-      
+    
+ 
     </>
   )
 }

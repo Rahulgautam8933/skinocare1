@@ -15,27 +15,27 @@ const Checkoutpage = () => {
                         </div>
                         <div className="checkoutpagebase">
                             <p>Gentle Cleanse Face Foam</p>
-                            <h2>Rs. 580  <s>Rs 680</s></h2>
+                            <p><strong>Rs. 580</strong>  <s>Rs 680</s></p>
                         </div>
                         <div className="checkoutpagebase">
                             <p>Product 2</p>
-                            <h2>Rs. 556  <s>Rs 680</s></h2>
+                            <p><strong>Rs. 556 </strong> <s>Rs 680</s></p>
                         </div>
                         <div className="checkoutpagebase">
                             <p>Product 3</p>
-                            <h2>Rs. 491  <s>Rs 680</s></h2>
+                            <p><strong>Rs. 491 </strong> <s>Rs 680</s></p>
                         </div>
                         <div className="checkoutpagebase">
                             <p>Product 4</p>
-                            <h2>Rs. 126  <s>Rs 880</s></h2>
+                            <p><strong>Rs. 126</strong>  <s>Rs 880</s></p>
                         </div>
                         <div className="checkoutpagebase">
                             <p>Product 5</p>
-                            <h2>Rs. 654  <s>Rs 880</s></h2>
+                            <p><strong>Rs. 654 </strong> <s>Rs 880</s></p>
                         </div>
                         <div className="checkoutpagebase">
                             <p>Product 6</p>
-                            <h2>Rs. 782  <s>Rs 880</s></h2>
+                            <p><strong>Rs. 782 </strong> <s>Rs 880</s></p>
                         </div>
                     </div>
                     <div className="checkoutpagebox">

@@ -177,6 +177,7 @@ const Mobilefiltersidebar = ({ close }) => {
 
                 </div>
 
+
                     </div>
                     <div className="flterselect">
                     <div className="accordion accordianbut" id='accordianbut12' >
@@ -239,6 +240,8 @@ const Mobilefiltersidebar = ({ close }) => {
                         <button id='productshortbutton' className="accordion-button   accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             Sort
                         </button>
+
+                        
                     </h2>
                     <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div className="accordion-body shortbody">

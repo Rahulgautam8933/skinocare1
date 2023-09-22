@@ -2246,8 +2246,25 @@ img {
 
 
 @media (min-width:0px) and (max-width:600px) {
+  .footermaincontainer {
+    position: relative;
+  }
+  .gouplogo {
 
-
+    display: flex;
+    /* transform: rotate(90deg); */
+    padding: 8px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    position: absolute;
+    right: 60px;
+    /* bottom: 323px; */
+    border-radius: 50px;
+    background: var(--foundation-pri-cream-darker, #585653);
+    z-index: 10;
+  }
+  
   .footerboxs {
     display: flex;
     justify-content: space-between;
@@ -2257,6 +2274,7 @@ img {
     width: 80%;
     margin: auto;
     flex-wrap: wrap;
+    z-index: 3;
 
   }
 
@@ -2347,7 +2365,26 @@ img {
 }
 
 @media (min-width:600px) and (max-width:1000px) {
+  .footermaincontainer {
+    position: relative;
+  }
+  
+  
+  .gouplogo {
 
+    display: flex;
+    /* transform: rotate(90deg); */
+    padding: 8px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    position: absolute;z-index: 10;
+    right: 60px;
+    bottom: 323px;
+    border-radius: 50px;
+    background: var(--foundation-pri-cream-darker, #585653);
+  }
+  
 
   .footerboxs {
     display: flex;
@@ -2357,6 +2394,7 @@ img {
     padding: 5rem 0rem;
     width: 90%;
     margin: auto;
+    z-index: 3;
   }
 
   .footerboximg {
@@ -2440,11 +2478,29 @@ img {
 
 @media (min-width:1000px) {
 
-
+  .gouplogo {
+    z-index: 10;
+    display: flex;
+    /* transform: rotate(90deg); */
+    padding: 8px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    position: absolute;
+    right: 60px;
+    bottom: 323px;
+    border-radius: 50px;
+    background: var(--foundation-pri-cream-darker, #585653);
+  }
+  
 
   .footermaincontainer {
     position: relative;
   }
+
+
+
+
 
 
   .footerboxs {
@@ -2455,11 +2511,12 @@ img {
     padding: 5rem 0rem;
     width: 90%;
     margin: auto;
+    z-index: 3;
   }
 
   .footerboximg {
     width: 6rem;
-    /* margin: auto; */
+   
   }
 
   .footerboximg img {
@@ -2469,7 +2526,7 @@ img {
   .footerbox1boxs {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+   
   }
 
   .footerbox {
@@ -2489,7 +2546,7 @@ img {
 
   .footerbox1box p {
     font-size: 1.14vw;
-    /* padding: 0.7rem 0rem; */
+  
     font-weight: 500;
   }
 
@@ -2501,7 +2558,7 @@ img {
   .footerbox1box p i {
     font-size: 1.3rem;
     padding-right: 1rem;
-    /* color: rgb(149, 149, 153); */
+    
   }
 
   .footerbox1boxsociallinks {
@@ -2535,6 +2592,7 @@ img {
     cursor: pointer;
   }
 }
+
 
 
 
