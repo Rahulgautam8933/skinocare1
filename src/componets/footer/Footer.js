@@ -4,15 +4,30 @@ import footerlogo from '../../img/logo.png'
 import footerimglink from '../../img/download.png'
 import footerimglink1 from '../../img/download1.png'
 import goup from '../../img/right-arrow.svg'
+import { useNavigate } from 'react-router-dom'
 function Footer() {
+
+  const navigator = useNavigate();
+  const gotohome = () => {
+    navigator('/');
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+
+  const up = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
   return (
     <>
 
       <div className="footermaincontainer">
 
         <div className="footergouplogo">
-          <div className="gouplogo">
-        <a href="#home">  <img src={goup} alt="" /></a>
+          <div onClick={up} className="gouplogo">
+            <img src={goup} alt="" />
           </div>
         </div>
 
@@ -29,7 +44,7 @@ function Footer() {
                 <div className="footerbox1boxs">
                   <div className="footerbox1box">
                     <h3>Pages</h3>
-                    <p>About us</p>
+                    <p onClick={gotohome} >About us</p>
                     <p>Our Expertise</p>
                     <p>Testimonials</p>
                     <p>Skin & Hair</p>

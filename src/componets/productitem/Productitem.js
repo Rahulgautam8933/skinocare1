@@ -3,6 +3,7 @@ import './Productitem.css'
 import img1 from '../../img/product5.png'
 import basket from '../../img/basket.png'
 import { useNavigate } from 'react-router-dom'
+import star from '../../img/ant-design_star-filled.svg'
 const Productitem = () => {
     const navigator = useNavigate();
     return (
@@ -10,6 +11,7 @@ const Productitem = () => {
 
             <div className="productbox123">
                 <div className="productimg12">
+                <p><img src={star} alt="" /> <span>4.5</span></p>
                     <img src={img1} alt="" />
                 </div>
                 <div className="productcontent2">
