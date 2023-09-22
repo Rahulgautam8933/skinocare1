@@ -15,27 +15,27 @@ const Checkoutpage = () => {
                         </div>
                         <div className="checkoutpagebase">
                             <p>Gentle Cleanse Face Foam</p>
-                            <p>Rs. 580  <s>Rs 680</s></p>
+                            <h2>Rs. 580  <s>Rs 680</s></h2>
                         </div>
                         <div className="checkoutpagebase">
                             <p>Product 2</p>
-                            <p>Rs. 556  <s>Rs 680</s></p>
+                            <h2>Rs. 556  <s>Rs 680</s></h2>
                         </div>
                         <div className="checkoutpagebase">
                             <p>Product 3</p>
-                            <p>Rs. 491  <s>Rs 680</s></p>
+                            <h2>Rs. 491  <s>Rs 680</s></h2>
                         </div>
                         <div className="checkoutpagebase">
                             <p>Product 4</p>
-                            <p>Rs. 126  <s>Rs 880</s></p>
+                            <h2>Rs. 126  <s>Rs 880</s></h2>
                         </div>
                         <div className="checkoutpagebase">
                             <p>Product 5</p>
-                            <p>Rs. 654  <s>Rs 880</s></p>
+                            <h2>Rs. 654  <s>Rs 880</s></h2>
                         </div>
                         <div className="checkoutpagebase">
                             <p>Product 6</p>
-                            <p>Rs. 782  <s>Rs 880</s></p>
+                            <h2>Rs. 782  <s>Rs 880</s></h2>
                         </div>
                     </div>
                     <div className="checkoutpagebox">
@@ -43,12 +43,8 @@ const Checkoutpage = () => {
                             <p>Don`t Have an account? <span>Log in</span></p>
 
                         </div>
-
-
                         <div className="checkoutform">
-
-
-                            <div className="accordion accordianbut" id='accordianbut12' >
+                            <div className="accordion accordianbut" id='accordianbut127' >
                                 <div className="accordion  " id='accordianclass2'>
                                     <h2 className="accordion" id='bordercolor123'>
                                         <button id='productshortbutton' className="accordion-button   accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo123456" aria-expanded="false" aria-controls="collapseTwo">
@@ -61,7 +57,7 @@ const Checkoutpage = () => {
                                         <form class="row g-3">
                                         <div class="col-md-12">
                                           <label for="inputEmail4" class="form-label">Full Name</label>
-                                          <input type="text" class="form-control" id="inputEmail4"/>
+                                          <input type="text" class="form-control" id="inputEmail4"     />
                                         </div>
                                         <div class="col-md-12">
                                           <label for="inputPassword4" class="form-label">Phone Number</label>
@@ -75,15 +71,16 @@ const Checkoutpage = () => {
                                           <label for="inputPassword4" class="form-label">Email</label>
                                           <input type="email" class="form-control" id="inputPassword4"/>
                                         </div>
-                                        
+
                                       </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
                         <div className="checkoutform">
-                            <div className="accordion accordianbut" id='accordianbut12' >
+                            <div className="accordion accordianbut" id='accordianbut127' >
                                 <div className="accordion  " id='accordianclass2'>
                                     <h2 className="accordion" id='bordercolor123'>
                                         <button id='productshortbutton' className="accordion-button   accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1234567" aria-expanded="false" aria-controls="collapseTwo">
@@ -104,7 +101,7 @@ const Checkoutpage = () => {
                                                 <div class="col-md-6">
                                                     <label for="inputState" class="form-label">State</label>
                                                     <select id="inputState" class="form-select">
-                                                        <option selected>Enter</option>
+                                                        <option className='select1' selected>Enter</option>
                                                         <option>...</option>
                                                     </select>
                                                 </div>
@@ -204,7 +201,7 @@ const Checkoutpage = () => {
                                 <span>Apply</span>
 
                             </div>
-                            <p>You can only use one discount code per order</p>
+                            <p className='coupon1'>You can only use one discount code per order</p>
 
 
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './Product.css'
 import img1 from '../../img/imgswiper.png'
 import img2 from '../../img/product3.jpg'
 import Productitems from '../../componets/productitems/Productitems'
@@ -8,7 +8,10 @@ import Productsidebar from '../../componets/productsidebar/Productsidebar'
 import ProductSidebar2 from '../../componets/productsidebar/ProductSidebar2'
 import Productsidebar3 from '../../componets/productsidebar/Productsidebar3'
 import Splide from '@splidejs/splide'
+import basket from '../../img/basket.png'
+import buynow from '../../img/Buy Now.svg'
 import Productslider from '../../componets/productimgslider/Productslider'
+import Cart from '../../componets/cart/Cart'
 const Product = () => {
     const navigator = useNavigate();
     const [show, setShow] = useState(false);
@@ -21,8 +24,12 @@ const Product = () => {
     const closebutton2 = () => {
         setShow2(false);
     }
+    const closebutton3 = () => {
+        setShow3(false);
+    }
     const [show1, setShow1] = useState(false);
     const [show2, setShow2] = useState(false);
+    const [show3, setShow3] = useState(false);
 
 
 
@@ -33,12 +40,13 @@ const Product = () => {
             {show ? <Productsidebar close={closebutton} /> : ""}
             {show1 ? <ProductSidebar2 close={closebutton1} /> : ""}
             {show2 ? <Productsidebar3 close={closebutton2} /> : ""}
+            {show3 ? <Cart close={closebutton3} /> : ""}
 
             <div className="productmaincontainer">
                 <div className="productcontainer">
                     <div className="productbox">
 
-                        <div className="procductimgslider">
+                          <div className="procductimgslider">
                             <Productslider />
                         </div>
                     </div>
@@ -56,26 +64,21 @@ const Product = () => {
                             </div>
                         </div>
                         <div className="productitemscontainer">
-                            <button className='cardbutton' id='addcard' >Add to cart</button>
-                            <button onClick={() => navigator('/check_out')} className='cardbutton ' id='buynow'>Buy Now</button>
-                        </div>
+                            <button onClick={()=>setShow3(true)} className='cardbutton' id='addcard' >Add to cart <img src={basket} alt="" /></button>
+                            <button onClick={() => navigator('/check_out')} className='cardbutton ' id='buynow'>Buy Now <img src={buynow} alt="" /></button>
+                                         </div>
                         <div className="productitemscontainer">
-
                             <div class="accordion accordianbut" id='accordianbut' >
                                 <div class="accordion">
                                     <h2 class="accordion">
                                         <button onClick={() => setShow(true)} class="accordion-button collapsed  accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Specification
+                                             Specification
                                         </button>
                                     </h2>
-
                                 </div>
-
-
                             </div>
                         </div>
                         <div className="productitemscontainer">
-
                             <div class="accordion accordianbut" id='accordianbut' >
                                 <div class="accordion">
                                     <h2 class="accordion">
@@ -83,7 +86,6 @@ const Product = () => {
                                             How to use?
                                         </button>
                                     </h2>
-
                                 </div>
                             </div>
                         </div>
@@ -95,17 +97,13 @@ const Product = () => {
                                             4.8 Review(28)
                                         </button>
                                     </h2>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <Productitems heading="Related Products" />
-                
+                <Productitems heading="Related Products" /> 
                 <Productitems heading="Recently viewed Products" />
-
             </div>
         </>
     )

@@ -80,10 +80,13 @@
 
 
 }
-.productbutton12 button .basket {
+.productbutton12 button img {
     
   
     width: 24px;
     height: 24px;
     flex-shrink: 0;
+    margin: 0rem 0.5rem;
+    
 }
+

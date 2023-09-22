@@ -1,19 +1,637 @@
-#accordianbut123{
+#accordianbut123 {
     background-color: blue;
 }
 
-#accordianclass2{
+#accordianclass2 {
     background: var(--foundation-sec-cream-light-hover, #FCFAF6);
 }
+
 #accordianclass2 {
-   
+
     --bs-accordion-border-color: transparent;
 }
-#accordianclass2 button{
+
+#accordianbut127 button {
+    padding: 0.4rem 0rem;
+    background-color: transparent;
+    border-color: transparent;
+    border: 1px solid;
+    border-radius: 27px;
+}
+
+
+
+#accordianclass2 button {
     border: none;
     border-color: transparent;
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
 }
-#bordercolor123{
+
+#bordercolor123 {
     --bs-accordion-border-color: transparent;
+
+}
+
+.checkoutform h4 {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.checkoutform12 p {
+    color: var(--bg-primary-dark-elevated, #1C1C1E);
+
+    /* Text sm/Regular */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+}
+
+.coupon1 {
+    color: var(--gray-500, #667085);
+
+    /* Text sm/Regular */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+}
+
+
+.form-control:focus{
+    /* border: none; */
+    box-shadow: none;
+}
+.form-select:focus{
+    /* border: none; */
+    box-shadow: none;
+}
+.form-select:hover {
+  
+    background-color: white;
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:0px) and (max-width:600px) {
+
+
+    .checkoutpagebase p {
+        color: var(--gray-900, #101828);
+        /* Text xl/Medium */
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        /* 150% */
+
+        color: #000;
+
+
+    }
+
+    .checkoutpagebase h2 {
+        color: var(--gray-900, #101828);
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+
+
+    }
+
+    .checkoutpagebase h2 s {
+        color: var(--gray-400, #98A2B3);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        /* 150% */
+        text-decoration-line: strikethrough;
+
+    }
+
+
+
+    .chaeckoutpagecontainer {
+        background-color: #fcf9f3;
+    }
+
+    .chaeckoutpagecontainer {
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+    }
+
+    .checkoutpageboxs {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 90%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .checkoutpagebox {
+        width: 99%;
+
+    }
+
+    .checkoutpageboxheading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .checkoutpageboxheading h3 {
+        font-size: 4.4vw;
+    }
+
+    .checkoutpagebase {
+        display: flex;
+        justify-content: space-between;
+        /* margin: 1rem 0rem; */
+    }
+
+    .checkoutpagebase p {
+        font-size: 3.9vw;
+    }
+
+    .checkoutpagebase p s {
+        font-size: 2.9vw;
+        color: #98a2b3;
+
+    }
+
+
+
+    .forminput p {
+        font-size: 4.7vw;
+    }
+
+    .checkoutform {
+        padding-top: 0.4rem;
+        border-bottom: 1px solid black;
+    }
+
+    .selectform {
+        width: 100%;
+        padding: 0.4rem;
+        border: none;
+        background-color: transparent;
+        font-size: 4.7vw;
+        font-weight: 500;
+        margin: 0.5rem 0rem;
+    }
+
+    .selectform h4 {
+        padding: 1rem 0rem;
+    }
+
+    .applycupan {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .applycupan input {
+        width: 70%;
+        display: flex;
+        padding: 10px 14px;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+        border-radius: 8px;
+        border: 1px solid var(--bg-primary-dark-elevated, #1C1C1E);
+        background: var(--White, #FFF);
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+    }
+
+    .applycupan span {
+        display: flex;
+        padding: 16px 24px 16px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        border-radius: 30px;
+        border: 1px solid var(--foundation-pri-green-normal, #D9F1E1);
+        background: var(--foundation-pri-green-normal, #D9F1E1);
+        margin: 0rem 0.6rem;
+        /* Shadow/xs */
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+
+    }
+
+    .checkoutform123 {
+        margin: 2rem 0rem;
+    }
+
+    .checkoutform123 button {
+        width: 100%;
+        display: flex;
+        padding: 16px 16px 16px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        align-self: stretch;
+
+        border-radius: 30px;
+        border: 1px solid var(--foundation-pri-green-normal, #D9F1E1);
+        background: var(--foundation-pri-green-normal, #D9F1E1);
+
+        /* Shadow/xs */
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        
+    }
+}
+
+@media (min-width:600px) and (max-width:1000px) {
+
+
+
+    .checkoutpagebase p {
+        color: var(--gray-900, #101828);
+        /* Text xl/Medium */
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        /* 150% */
+
+        color: #000;
+
+
+    }
+
+    .checkoutpagebase h2 {
+        color: var(--gray-900, #101828);
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+
+
+    }
+
+    .checkoutpagebase h2 s {
+        color: var(--gray-400, #98A2B3);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        /* 150% */
+        text-decoration-line: strikethrough;
+
+    }
+
+
+
+    .chaeckoutpagecontainer {
+        background-color: #fcf9f3;
+    }
+
+    .chaeckoutpagecontainer {
+
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+    }
+
+    .checkoutpageboxs {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 90%;
+        margin: auto;
+    }
+
+    .checkoutpagebox {
+        width: 48%;
+
+    }
+
+    .checkoutpageboxheading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .checkoutpageboxheading h3 {
+        font-size: 1.6vw;
+    }
+
+    .checkoutpagebase {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0rem;
+    }
+
+    .checkoutpagebase p {
+        font-size: 1.8vw;
+    }
+
+    .checkoutpagebase p s {
+        font-size: 1.4vw;
+        color: #98a2b3;
+
+    }
+
+
+
+    .forminput p {
+        font-size: 1.9vw;
+    }
+
+    .checkoutform {
+        padding-top: 0.4rem;
+        border-bottom: 1px solid black;
+    }
+
+    .selectform {
+        width: 100%;
+        padding: 0.4rem;
+        border: none;
+        background-color: transparent;
+        font-size: 1.9vw;
+        font-weight: 500;
+        margin: 0.5rem 0rem;
+    }
+
+    .selectform h4 {
+        padding: 1rem 0rem;
+    }
+
+    .applycupan {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .applycupan input {
+        width: 75%;
+        display: flex;
+        padding: 10px 14px;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+        border-radius: 8px;
+        border: 1px solid var(--bg-primary-dark-elevated, #1C1C1E);
+        background: var(--White, #FFF);
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+    }
+
+    .applycupan span {
+        display: flex;
+        padding: 16px 24px 16px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        border-radius: 30px;
+        border: 1px solid var(--foundation-pri-green-normal, #D9F1E1);
+        background: var(--foundation-pri-green-normal, #D9F1E1);
+
+        /* Shadow/xs */
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+
+    }
+
+    .checkoutform123 {
+        margin: 2rem 0rem;
+    }
+
+    .checkoutform123 button {
+        width: 100%;
+        display: flex;
+        padding: 16px 16px 16px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        align-self: stretch;
+
+        border-radius: 30px;
+        border: 1px solid var(--foundation-pri-green-normal, #D9F1E1);
+        background: var(--foundation-pri-green-normal, #D9F1E1);
+
+        /* Shadow/xs */
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        
+    }
+    
+
+                       
+}
+
+@media (min-width:1000px) {
+
+    .chaeckoutpagecontainer {
+        background-color: #fcf9f3;
+    }
+
+    .chaeckoutpagecontainer {
+
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+    }
+
+    .checkoutpageboxs {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 90%;
+        margin: auto;
+    }
+
+    .checkoutpagebox {
+        width: 48%;
+
+    }
+
+    .checkoutpageboxheading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .checkoutpageboxheading h3 {
+        color: #000;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    .checkoutpagebase {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0rem;
+    }
+
+    .checkoutpagebase p {
+        color: var(--gray-900, #101828);
+        /* Text xl/Medium */
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        /* 150% */
+
+        color: #000;
+
+
+    }
+
+    .checkoutpagebase h2 {
+        color: var(--gray-900, #101828);
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+
+
+    }
+
+    .checkoutpagebase h2 s {
+        color: var(--gray-400, #98A2B3);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        /* 150% */
+        text-decoration-line: strikethrough;
+
+    }
+
+    .checkboxsigninbutton {
+        /* padding-bottom: 1rem; */
+    }
+
+    .forminput p {
+        font-size: 1.7vw;
+    }
+
+    .checkoutform {
+        padding-top: 0.4rem;
+        border-bottom: 1px solid black;
+    }
+
+    .selectform {
+        width: 100%;
+        padding: 0.4rem;
+        border: none;
+        background-color: transparent;
+        font-size: 1.7vw;
+        font-weight: 500;
+        margin: 0.5rem 0rem;
+    }
+
+    .selectform h4 {
+        padding: 1rem 0rem;
+    }
+
+    .applycupan {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .applycupan input {
+        width: 75%;
+        display: flex;
+        padding: 10px 14px;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+        border-radius: 8px;
+        border: 1px solid var(--bg-primary-dark-elevated, #1C1C1E);
+        background: var(--White, #FFF);
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+    }
+
+    .applycupan span {
+        display: flex;
+        padding: 16px 24px 16px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        border-radius: 30px;
+        border: 1px solid var(--foundation-pri-green-normal, #D9F1E1);
+        background: var(--foundation-pri-green-normal, #D9F1E1);
+
+        /* Shadow/xs */
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    }
+
+    .checkoutform123 {
+        margin: 2rem 0rem;
+    }
+
+    .checkoutform123 button {
+        width: 100%;
+        display: flex;
+        padding: 16px 16px 16px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        align-self: stretch;
+
+        border-radius: 30px;
+        border: 1px solid var(--foundation-pri-green-normal, #D9F1E1);
+        background: var(--foundation-pri-green-normal, #D9F1E1);
+
+        /* Shadow/xs */
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+    }
+
+    .checkboxsigninbutton p {
+        color: #000;
+
+        /* Text md/Regular */
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 150% */
+    }
+
+    .checkboxsigninbutton p span {
+        color: var(--foundation-skin-normal-active, #BE9284);
+
+        /* Text md/Regular */
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration-line: underline;
+    }
 
 }

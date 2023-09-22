@@ -7,6 +7,7 @@ import Mobilefiltersidebar from '../../componets/mobilefilter/Mobilefiltersideba
 import Navbar2 from '../../componets/navbar2/Navbar2';
 import Sidebar from '../../componets/sidebar/Sidebar';
 import Backdrop from '../../componets/sidebar/Backdrop';
+import Productitem from '../../componets/productitem/Productitem';
 const Shoppage = () => {
 
 
@@ -355,24 +356,29 @@ const Shoppage = () => {
 
                         {
                             (count === 1) ? <div className="shoppageproduct">
-                                <Productitem2 />
-                                <Productitem2 />
-                                <Productitem2 />
-                                <Productitem2 />
-                                <Productitem2 />
-                                <Productitem2 />
-                                <Productitem2 />
-                                <Productitem2 />
+                               
+                               <Productitem/>
+                               <Productitem/>
+                               <Productitem/>
+                               <Productitem/>
+                               <Productitem/>
+                               <Productitem/>
+                               <Productitem/>
+                               <Productitem/>
+                               <Productitem/>
+                               <Productitem/>
                             </div> : <div className="shoppageproduct">
-                                <Productitem2 />
-                                <Productitem2 />
-                                <Productitem2 />
-                                <Productitem2 />
-                                <Productitem2 />
-                                <Productitem2 />
-                                <Productitem2 />
-                                <Productitem2 />
-                                <Productitem2 />
+                               <Productitem/>
+                               <Productitem/>
+                               <Productitem/>
+                               <Productitem/>
+                               <Productitem/>
+                               <Productitem/>
+                               <Productitem/>
+                               <Productitem/>
+                               <Productitem/>
+                               <Productitem/>
+                               <Productitem/>
                             </div>
                         }
 

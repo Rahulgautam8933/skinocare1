@@ -7,10 +7,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 const Productitems = ({ heading }) => {
 
 
-    let size = window.outerWidth;
+    let size = window.innerWidth;
+    let size1 = window.innerWidth;
 console.log(size);
 let number;
-if (size > 2000){
+if (size > 1500){
   number = 6;
 }
 else if (size >= 1352 && 1500 > size){
@@ -22,8 +23,11 @@ else if (size >= 1200 && 1352 > size){
 else if (size >= 1074 && 1200 > size){
   number = 4.5;
 }
-else if (size >= 800 && 1074 > size){
+else if (size >= 900 && 1074 > size){
   number = 4;
+}
+else if (size >= 800 && 900 > size){
+  number = 3.5;
 }
 else if (size >= 600 && 800 > size) {
   number = 3;
@@ -32,7 +36,7 @@ else if (size >= 400 && 600 > size) {
   number = 1.5;
 }
 else {
-  number = 1.5;
+  number = 1.3;
 }
 
 
@@ -47,7 +51,7 @@ else {
 
                 <div className="productboxs1">
                 <Swiper
-                spaceBetween={50}
+                spaceBetween={2}
                 slidesPerView={number}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
@@ -65,11 +69,7 @@ else {
                 <SwiperSlide>  <Productitem/>  </SwiperSlide>
                 <SwiperSlide>  <Productitem/>  </SwiperSlide>
                 <SwiperSlide>  <Productitem/>  </SwiperSlide>
-             
-           
-                
-                
-                
+                  
               </Swiper>
 
 
