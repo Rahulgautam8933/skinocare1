@@ -9,17 +9,22 @@ import { Route, Routes } from 'react-router-dom';
 import Checkout from './pages/checkout/Checkout';
 import Product from './pages/productpage/Product';
 import Shoppage from './pages/shoppage/Shoppage';
-import Cart from './componets/cart/Cart';
+
+import Signup from './pages/SignupSignin/Signup';
 
 function App() {
+  
 
+
+
+  
 
 
 
   const [sidebar, setsidebar] = useState(false);
 
   const toggleSidebar = () => {
-    // alert('ssfjhsfjsf');
+   
     setsidebar(true);
 
   }
@@ -45,6 +50,7 @@ function App() {
         <Route path='/check_out' element={<Checkout />}></Route>
         <Route path='/product' element={<Product/>}></Route>
         <Route path='/shop_now' element={<Shoppage/>}></Route>
+        <Route path='/Signup' element={<Signup/>}></Route>
        
       </Routes>
 

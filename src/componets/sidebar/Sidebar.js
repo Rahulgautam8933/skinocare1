@@ -23,6 +23,7 @@ function Sidebar({sidebar, closeback}) {
     <li> <a href="#sec7maincontainer">Testimonials</a> </li>
     <li> <a href="#sec6maincontainer">Skin & Hair</a> </li>
     <li  > <a href="/shop_now">Shop</a></li>
+    <li  > <a href="/Signup">Sign up</a></li>
     </ul>
 
 

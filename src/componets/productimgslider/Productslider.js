@@ -12,8 +12,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 import { Navigation, Thumbs } from "swiper/modules";
 
-
-
 let size = window.outerWidth;
 console.log(size);
 let number;
@@ -29,8 +27,6 @@ else if (size >= 762 && 762 > size) {
 else {
   number = 4;
 }
-
-
 
 const Productslider = () => {
 
@@ -48,8 +44,6 @@ const Productslider = () => {
       <div className="swiperimg">
         <img src={imgchange} alt="" />
       </div>
-
-
 
       <Swiper
         spaceBetween={2}
