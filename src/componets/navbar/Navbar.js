@@ -50,7 +50,7 @@ function Navbar({ openSidebar }) {
                     <div className="navbarbox">
                         <div className="contactnavbox">
                             <div className="navbarbutton">
-                                <button  >Contact us</button>
+                                <button onClick={()=>navigator('/contact')}   >Contact us</button>
                             </div>
                            
 

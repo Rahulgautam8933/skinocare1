@@ -1,0 +1,94 @@
+.contactcontainers {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    /* gap: 20px; */
+    padding-top: 9rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+
+
+}
+
+@media (min-width:0px) and (max-width:500px) {
+    .contactbox {
+        width: 100%;
+    } 
+}
+@media (min-width:500px)  {
+    .contactbox {
+        width: 49%;
+    }
+}
+
+
+
+
+.contactbox iframe {
+    width: 100%;
+}
+
+.contactheading h1 {
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: linear-gradient(90deg, #CD6A59 5.6%, #F6D992 95.32%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contactmidcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.contactbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.contactdetails p {
+    color: var(--bg-primary-dark-elevated, #1C1C1E);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5625rem;
+    /* 125% */
+    letter-spacing: -0.025rem;
+}
+
+.contactdetails p span {
+    color: var(--foundation-pi-1-normal-hover, #DD9183);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5625rem;
+    letter-spacing: -0.025rem;
+}
+
+.contactmidcontent p{
+    color: var(--bg-primary-dark-elevated-text, #1C1C1E);
+
+/* Text sm/Medium */
+font-family: Inter;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.25rem; /* 142.857% */
+}
+.contactmidcontent p img{
+    margin: 0px 6px;
+}

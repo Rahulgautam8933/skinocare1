@@ -11,14 +11,14 @@ import Product from './pages/productpage/Product';
 import Shoppage from './pages/shoppage/Shoppage';
 
 import Signup from './pages/SignupSignin/Signup';
+import Signupvarification from './pages/SignupSignin/Signupvarification';
+import SignIn from './pages/SignupSignin/SignIn';
+import SignInVerification from './pages/SignupSignin/SignInVerification';
+import ForgetPassword from './pages/SignupSignin/ForgetPassword';
+import ForgetEmailLink from './pages/SignupSignin/ForgetEmailLink';
+import ContactUs from './pages/Contact/ContactUs';
 
 function App() {
-  
-
-
-
-  
-
 
 
   const [sidebar, setsidebar] = useState(false);
@@ -51,6 +51,12 @@ function App() {
         <Route path='/product' element={<Product/>}></Route>
         <Route path='/shop_now' element={<Shoppage/>}></Route>
         <Route path='/Signup' element={<Signup/>}></Route>
+        <Route path='/verify' element={<Signupvarification/>}></Route>
+        <Route path='/signIn' element={<SignIn/>}></Route>
+        <Route path='/signInVerify' element={<SignInVerification/>}></Route>
+        <Route path='/forgetpassword' element={<ForgetPassword/>}></Route>
+        <Route path='/resetpassword' element={<ForgetEmailLink/>}></Route>
+        <Route path='/contact' element={<ContactUs/>}></Route>
        
       </Routes>
 

@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import './Signup.css'
-import signup from '../../img/signup.svg'
+import signup from '../../img/signinimg.png'
 import buttonlogo from '../../img/google.svg'
 import buttonlog2 from '../../img/facebook.png'
 import buttonlog3 from '../../img/applelogo.png'
-
 import mail from '../../img/mail.svg'
 
 import password from '../../img/Password.svg'
@@ -13,29 +12,29 @@ import eyeopen from '../../img/eye-open.svg'
 
 import Signupinput from './Signupinput'
 import { useNavigate } from 'react-router-dom'
-const Signup = () => {
+const SignIn = () => {
+
     const navigator = useNavigate();
 
     const [input, setInput] = useState(true);
-    const continuebutton = (e)=>{
+    const continuebutton = (e) => {
         e.preventDefault()
         setInput(false);
     }
-    const continuebuttonalert = (e)=>{
+    const continuebuttonalert = (e) => {
         e.preventDefault()
-        navigator("/verify");
-        document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+        navigator("/signInVerify");
 
 
     }
 
-    const gotosignin = ()=>{
-        navigator('/signIn');
+    const gotosignup = ()=>{
+        navigator('/Signup')
         document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-
     }
+
+
     return (
         <>
 
@@ -46,25 +45,42 @@ const Signup = () => {
                 <div className="signupcontent">
 
                     <div className="formheading">
-                        <h1>Sign up</h1>
+                        <h1>Sign In</h1>
                     </div>
                     <form >
                         <div className="inputs">
 
-                            {
-                                input ?<Signupinput lable1 = "Name" lable2 = "Phone/Email" type = "text" placeholder1 = "Name" placeholder2 = " Number/Email" mail = {mail}  />
-                                 : <Signupinput lable1 = "Password" lable2 = "Confirm Password" type = "password" placeholder1 = "Password" placeholder2 = "Confirm Password" eyeopen = {eyeopen} mail = {password}  />
-                            }
+                            <div className="forminputs">
+                                <div className="forminput">
+                                    <label htmlFor="name">Email</label>
+                                    <input type="email" id='name' placeholder='email' />
+                                    <span><img src={mail} alt="" /></span>
 
-                            {
+                                </div>
+                                <div className="forminput">
+                                    <label htmlFor="phoneEmail">Password</label>
+                                    <input type="password" id='phoneEmail' placeholder="Password" />
+                                    <div className="mailsvg">
+                                    <img src={password} alt="" />
+                                </div>
+                                <div className="eyeopen">
+                                <img src={eyeopen} alt="" />
+                                </div>
+                                </div>
+                                <span className='signinwithotp' onClick={()=> navigator("/signInVerify")} >Sign In with OTP</span>
+                            </div>
 
-                                input ?   <div className="formbutton">
-                                <button onClick={continuebutton}>Continue</button>
-                            </div>  :   <div className="formbutton">
-                            <button onClick={continuebuttonalert}>Continue</button>
-                        </div>
-                            }
-                          
+
+
+                            <div className="formbutton">
+                                <button onClick={continuebuttonalert}>Submit</button>
+                            </div>
+
+                            <div className="forgetpassword" onClick={()=>navigator("/forgetpassword")} >
+                            <p>Forgot your password?</p>
+                            </div>
+
+
 
                         </div>
 
@@ -88,8 +104,8 @@ const Signup = () => {
                         </div>
                     </div>
 
-                    <div className="signuplogin"  onClick={gotosignin}>
-                        <strong>Already have an account?</strong> <span>SingIn</span>
+                    <div className="signuplogin" onClick={gotosignup}>
+                        <strong>Don`t have an account?</strong> <span>Sign up</span>
                     </div>
 
                 </div>
@@ -100,4 +116,4 @@ const Signup = () => {
     )
 }
 
-export default Signup
+export default SignIn
