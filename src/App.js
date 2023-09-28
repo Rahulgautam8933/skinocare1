@@ -17,6 +17,7 @@ import SignInVerification from './pages/SignupSignin/SignInVerification';
 import ForgetPassword from './pages/SignupSignin/ForgetPassword';
 import ForgetEmailLink from './pages/SignupSignin/ForgetEmailLink';
 import ContactUs from './pages/Contact/ContactUs';
+import SkinAndCare from './pages/skin_and_care/SkinAndCare';
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
         <Route path='/forgetpassword' element={<ForgetPassword/>}></Route>
         <Route path='/resetpassword' element={<ForgetEmailLink/>}></Route>
         <Route path='/contact' element={<ContactUs/>}></Route>
+        <Route path='/skinAndCare' element={<SkinAndCare/>}></Route>
        
       </Routes>
 

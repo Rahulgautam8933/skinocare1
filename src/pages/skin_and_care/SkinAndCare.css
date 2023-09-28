@@ -1,0 +1,65 @@
+.skincarescontainer {
+    padding-top: 8rem;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.skincareheading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skincareheading h2 {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: linear-gradient(90deg, #CD6A59 5.6%, #F6D992 95.32%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.skincareheading p {
+    color: var(--grays-gray-6-dark, #1C1C1E);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.skincarecontent{
+    color: var(--bg-primary-dark-elevated, #1C1C1E);
+font-family: Poppins;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.skincarecontent h2{
+    color: var(--bg-primary-dark-elevated, #1C1C1E);
+font-family: Poppins;
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.skincarecontent h3{
+    color: var(--bg-primary-dark-elevated, #1C1C1E);
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

@@ -7,6 +7,11 @@ function Navbar({ openSidebar }) {
     const gotohome = () => {
         navigator('/')
     }
+const up = ()=>{
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0; 
+}
+
     return (
         <>
             <div className="navbarcontainer">
@@ -28,8 +33,8 @@ function Navbar({ openSidebar }) {
                                 <li>
                                     <a href="#sec7maincontainer">Testimonials   </a>
                                 </li>
-                                <li>
-                                    <a href="#sec6maincontainer">Skin & Hair</a>
+                                <li onClick={up} >
+                                    <Link to="/skinAndCare">Skin & Hair</Link>
                                 </li>
                                 <li>
                                     <Link to="/shop_now"> Shop</Link>
