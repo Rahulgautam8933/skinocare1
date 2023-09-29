@@ -18,6 +18,11 @@ import ForgetPassword from './pages/SignupSignin/ForgetPassword';
 import ForgetEmailLink from './pages/SignupSignin/ForgetEmailLink';
 import ContactUs from './pages/Contact/ContactUs';
 import SkinAndCare from './pages/skin_and_care/SkinAndCare';
+import FAQs from './pages/FAQS/FAQs';
+import PrivcyPolicy from './componets/privecy/PrivcyPolicy';
+import TermsofService from './componets/privecy/TermsofService';
+import OurExpertise from './pages/ourExpertise/OurExpertise';
+import OurExpertises from './pages/ourExpertise/OurExpertises';
 
 function App() {
 
@@ -59,7 +64,11 @@ function App() {
         <Route path='/resetpassword' element={<ForgetEmailLink/>}></Route>
         <Route path='/contact' element={<ContactUs/>}></Route>
         <Route path='/skinAndCare' element={<SkinAndCare/>}></Route>
-       
+        <Route path='/FAQs' element={<FAQs/>}></Route>
+        <Route path='/privcyPolicy' element={<PrivcyPolicy/>}></Route>       
+        <Route path='/termofService' element={<TermsofService/>}></Route>       
+        <Route path='/ourExpertise' element={<OurExpertises/>}></Route>       
+        <Route path='/ourExpertises' element={<OurExpertise/>}></Route>       
       </Routes>
 
       <Footer />

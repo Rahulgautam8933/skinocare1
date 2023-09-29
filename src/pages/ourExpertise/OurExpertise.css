@@ -1,0 +1,227 @@
+/* ourExpertismain */
+.ourExpertiseContainer1 {
+    padding-top: 3rem;
+    width: 90%;
+    margin: auto;
+}
+
+.ourExpertiseMainContainer2 {
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 7.5rem;
+}
+
+.ourExpertiseMainContainer1 {
+    background: lightgray 50% / cover no-repeat;
+    /* width: 90rem; */
+    /* height: 66vw; */
+    flex-shrink: 0;
+    padding-top: 5rem;
+}
+
+
+.ourexpertiesimg1 img {
+    width: 100%;
+    margin-top: -9vw;
+}
+
+.ourexpertiesimgcontent {
+    display: flex;
+    width: 82.5rem;
+    padding: 2.5rem;
+    align-items: flex-start;
+    gap: 7.5rem;
+    border-radius: 2.5rem;
+    border: 1px solid var(--foundation-gold-normal, #F6D992);
+    background: var(--foundation-pi-4-light, #FEFAF4);
+}
+
+
+
+/* ourExpertise */
+
+
+.ourExpertiseContainer {
+    padding-top: 9rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 5rem;
+    width: 90%;
+    margin: auto;
+}
+
+.ourExpertiseCards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* Card */
+
+@media (min-width:0px) and (max-width:500px) {
+    .expertiseCardContainer {
+
+        display: flex;
+        width: 100%;
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        border-radius: 0.75rem;
+        border: 1px solid var(--labels-secondary, #343B45);
+    }
+}
+
+@media (min-width:500px) and (max-width:768px) {
+    .expertiseCardContainer {
+
+        display: flex;
+        width: 46%;
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        border-radius: 0.75rem;
+        border: 1px solid var(--labels-secondary, #343B45);
+    }
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+    .expertiseCardContainer {
+
+        display: flex;
+        width: 28%;
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        border-radius: 0.75rem;
+        border: 1px solid var(--labels-secondary, #343B45);
+    }
+}
+
+@media (min-width:1200px) {
+    .expertiseCardContainer {
+
+        display: flex;
+        width: 22.3%;
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        border-radius: 0.75rem;
+        border: 1px solid var(--labels-secondary, #343B45);
+    }
+}
+
+.datestar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.datestar p {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+    /* 123.077% */
+    letter-spacing: -0.025rem;
+}
+
+.datestar h6 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.datestar h6 span {
+    color: var(--bg-primary-dark-elevated, #1C1C1E);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Caption1/Regular */
+    font-family: SF Pro;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+    /* 133.333% */
+    letter-spacing: -0.025rem;
+}
+
+.datestar h6 img {
+    width: 0.75rem;
+    height: 0.75rem;
+
+}
+
+.nameProfileDate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.nameProfileDate h5 {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+    /* 123.077% */
+    letter-spacing: -0.025rem;
+}
+
+.nameProfileDate .profileName {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nameProfileDate .profileName img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    /* background: var(--avatar-user-square-natali-craig, url(<path-to-image>), lightgray 50% / cover no-repeat); */
+}
+
+.nameProfileDate .profileName span {
+    color: #101828;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25rem;
+    /* 100% */
+}
+
+.cardpara {
+    color: var(--bg-primary-dark-elevated, #1C1C1E);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    /* 150% */
+    letter-spacing: -0.025rem;
+}

@@ -8,58 +8,330 @@
     gap: 2.5rem;
 }
 
-.skincareheading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
 
-.skincareheading h2 {
-    text-align: center;
+.skincarecontent {
+    color: var(--bg-primary-dark-elevated, #1C1C1E);
     font-family: Poppins;
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    background: linear-gradient(90deg, #CD6A59 5.6%, #F6D992 95.32%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-.skincareheading p {
-    color: var(--grays-gray-6-dark, #1C1C1E);
-    text-align: center;
-    font-family: Poppins;
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.skincarecontent{
+.skincarecontent h2 {
     color: var(--bg-primary-dark-elevated, #1C1C1E);
-font-family: Poppins;
-font-size: 1.125rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
-.skincarecontent h2{
-    color: var(--bg-primary-dark-elevated, #1C1C1E);
-font-family: Poppins;
-font-size: 2.5rem;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-}
-.skincarecontent h3{
+
+.skincarecontent h3 {
     color: var(--bg-primary-dark-elevated, #1C1C1E);
     font-family: Poppins;
     font-size: 2rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+
+
+/* profilelinks */
+
+.doctorprofile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.doctorprofile .doctorprofileimg img {
+    display: flex;
+    width: 3.5rem;
+    height: 3.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12.5rem;
+    /* background: var(--avatar-user-square-olivia-rhye, url(<path-to-image>), lightgray 50% / cover no-repeat); */
+}
+
+
+@media (min-width:0px) and (max-width:660px) {
+    .doctorlink {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+@media (min-width:600px) {
+    .doctorlink {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+}
+
+.doctorprofile .profilename p {
+    color: var(--gray-900, #101828);
+
+    /* Text lg/Semibold */
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem;
+    /* 155.556% */
+    margin: 0;
+}
+
+.doctorprofile .profilename span {
+    color: var(--gray-500, #667085);
+
+    /* Text md/Regular */
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    /* 150% */
+}
+
+.doctorprofilelinks {
+    display: flex;
+    gap: 4px;
+
+}
+
+.doctorprofilelinks button {
+    display: flex;
+    padding: 0.625rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--gray-300, #D0D5DD);
+    background: var(--White, #FFF);
+
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+
+.profilename #blog {
+    color: var(--foundation-pi-1-normal, #F6A192);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    /* color: #F6A192; */
+
+}
+
+.profilename h1 {
+    color: var(--gray-900, #101828);
+
+    /* Display md/Semibold */
+    font-family: Inter;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.75rem;
+    /* 122.222% */
+    letter-spacing: -0.045rem;
+}
+
+.profilename #blog2 {
+    color: var(--gray-500, #667085);
+
+    /* Text xl/Regular */
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem;
+    /* 150% */
+}
+
+.doctorprofilelinks #blogbutton {
+    display: flex;
+    padding: 0.75rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--foundation-pi-1-normal, #F6A192);
+    background: var(--foundation-pi-1-normal, #F6A192);
+
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    color: white;
+}
+
+
+
+/* cards */
+
+
+
+.blogpostcards {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    /* flex-wrap: wrap; */
+
+}
+
+@media (min-width:0px) and (max-width:470px) {
+    .blogpostcard {
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    
+        position: relative;
+    }
+  
+    .blogpostcards {
+        display: flex;
+        gap: 2rem;
+        position: relative;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+    
+    }
+}
+@media (min-width:470px) and (max-width:700px) {
+    .blogpostcard {
+        width: 46%;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    
+        position: relative;
+    }
+   
+    .blogpostcards {
+        display: flex;
+        gap: 2rem;
+        position: relative;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+    
+    }
+}
+@media (min-width:700px)  {
+    .blogpostcard {
+        width: 32%;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    
+        position: relative;
+    }
+    .blogpostcards {
+        display: flex;
+        gap: 2rem;
+        position: relative;
+        justify-content: space-between;
+        width: 100%;
+        /* flex-wrap: wrap; */
+    
+    }
+}
+
+
+
+.blogpostcard img {
+    width: 100%;
+
+}
+
+.blogpostcontentarrow {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.blogpostcontentarrow span img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.blogpostcard .blogpostcontent p {
+    color: var(--foundation-pi-1-normal-active, #C58175);
+
+    /* Text sm/Semibold */
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25rem;
+    /* 142.857% */
+}
+
+.blogpostcontent h5 {
+
+    color: var(--gray-500, #667085);
+
+    /* Text md/Regular */
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    /* 150% */
+}
+
+.blogpostcart {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.blogpostcart img{
+    display: flex;
+width: 2.5rem;
+height: 2.5rem;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 12.5rem;
+/* background: var(--avatar-user-square-olivia-rhye-color-background, url(<path-to-image>), lightgray 50% / cover no-repeat, #C7B9DA); */
+}
+
+.blogpostcart span h2{
+    color: var(--gray-900, #101828);
+
+/* Text sm/Semibold */
+font-family: Inter;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 600;
+margin: 0;
+line-height: 1.25rem; /* 142.857% */
+}
+.blogpostcart span p{
+    color: var(--gray-500, #667085);
+
+/* Text sm/Regular */
+font-family: Inter;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.25rem; /* 142.857% */
+margin: 0;
 }

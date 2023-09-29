@@ -14,8 +14,32 @@ function Footer() {
     document.documentElement.scrollTop = 0;
   }
 
+  const gotofaqs = ()=>{
+    navigator('/FAQs');
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+   
+}
+const privcyPolicy = ()=>{
+  navigator('/privcyPolicy');
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+
+}
+const termofService = ()=>{
+  navigator('/termofService');
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+
+}
 
   const up = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  const ourExpertise = ()=>{
+    navigator('/ourExpertises');
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
@@ -45,7 +69,7 @@ function Footer() {
                   <div className="footerbox1box">
                     <h3>Pages</h3>
                     <p onClick={gotohome} >About us</p>
-                    <p>Our Expertise</p>
+                    <p onClick={ourExpertise} >Our Expertise</p>
                     <p>Testimonials</p>
                     <p>Skin & Hair</p>
                     <p>Shop</p>
@@ -53,9 +77,9 @@ function Footer() {
                   </div>
                   <div className="footerbox1box">
                     <h3>Legal and help</h3>
-                    <p>FAQs</p>
-                    <p>Terms of use</p>
-                    <p>Privacy policy</p>
+                    <p onClick={gotofaqs} >FAQs</p>
+                    <p onClick={termofService}>Terms of use</p>
+                    <p onClick={privcyPolicy} >Privacy policy</p>
                   </div>
                   <div className="footerbox1box">
                     <h3>Contact us</h3>

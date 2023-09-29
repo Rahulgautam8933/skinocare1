@@ -1,0 +1,11 @@
+.privcyPolicycontainer {
+    padding-top: 9rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 5rem;
+    width: 90%;
+    margin: auto;
+}

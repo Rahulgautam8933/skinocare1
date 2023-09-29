@@ -1,0 +1,58 @@
+.faqscontainer {
+    padding-top: 9rem;
+    padding-bottom: 2rem;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    
+}
+
+.faqsswctionbox {
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    align-self: stretch;
+    border-radius: 1.5rem;
+    position: relative;
+    border: 1px solid var(--foundation-gold-normal, #F6D992);
+}
+.faqsbox{
+    width: 100%;
+}
+#faqsbutton {
+    width: 100%;
+}
+#faqsbutton button{
+    border: none;
+    box-shadow: none;
+    color: var(--bg-primary-dark-elevated, #1C1C1E);
+font-family: Poppins;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+#faqsbutton button:focus{
+    border-color: white;
+    /* outline: 0; */
+    box-shadow: 1px white;
+    border: none;
+
+}
+
+.accordion{
+    --bs-accordion-active-bg:
+}
+.accordion:focus{
+    border-color: white;
+    /* outline: 0; */
+    box-shadow: 1px white;
+    border: none;
+}

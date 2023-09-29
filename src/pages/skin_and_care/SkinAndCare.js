@@ -1,16 +1,26 @@
 import React from 'react'
 import './SkinAndCare.css'
+import copy from '../../img/copy.svg'
+import twitter from '../../img/twitter.svg'
+import facebook from '../../img/facebook.svg'
+import linkedin from '../../img/linkedin.svg'
+import profile from '../../img/doctorprofile.png'
+import profile1 from '../../img/Avatar (1).png'
+import profile2 from '../../img/Avatar.png'
+import img1 from '../../img/Image1.png'
+import img2 from '../../img/Image2.png'
+import img3 from '../../img/Image3.png'
+import arrow from '../../img/arrow-up-right.svg'
+import SkinAndCareHeading from '../../componets/skinAndCareHeading/SkinAndCareHeading'
 const SkinAndCare = () => {
+    const h2 = `"The Art and Science of Skin and Hair Care"`
+    const p = `"Balancing Beauty and Health for a Radiant You"`
     return (
         <>
 
             <div className="skincarescontainer">
 
-
-                <div className="skincareheading">
-                    <h2>"The Art and Science of Skin and Hair Care"</h2>
-                    <p> "Balancing Beauty and Health for a Radiant You"</p>
-                </div>
+                <SkinAndCareHeading h2={h2} p={p} />
 
                 <div className="skincarecontent">
 
@@ -90,6 +100,121 @@ const SkinAndCare = () => {
 
 
 
+                </div>
+
+                <div className="doctorlink">
+                    <div className="doctorprofile">
+
+                        <div className="doctorprofileimg">
+                            <img src={profile} alt="" />
+                        </div>
+
+                        <div className="profilename">
+                            <p>Dr. Neha Verma</p>
+                            <span>MBBS, PG in Dermatolgy(UK)</span>
+
+                        </div>
+
+                    </div>
+                    <div className="doctorprofilelinks">
+
+                        <button> <img src={copy} alt="" />  Copy link</button>
+                        <button> <img src={twitter} alt="" />  </button>
+                        <button> <img src={facebook} alt="" /> </button>
+                        <button> <img src={linkedin} alt="" /> </button>
+
+
+                    </div>
+                </div>
+
+                <div className="doctorlink">
+                    <div className="doctorprofile">
+                        <div className="profilename">
+                            <p id='blog'>Our Blog</p>
+                            <h1>Lastest blog posts</h1>
+                            <p id='blog2'>Tool and strategies modern teams need to help their companies grow.</p>
+                        </div>
+
+                    </div>
+                    <div className="doctorprofilelinks">
+
+                        <button id='blogbutton'>View all posts</button>
+
+
+                    </div>
+                </div>
+
+                <div className="blogpostcards">
+                    <div className="blogpostcard">
+                        <img src={img1} alt="" />
+
+                        <div className="blogpostcontent">
+                            <p>Design</p>
+
+                            <div className="blogpostcontentarrow">
+                                <h4>SkinoCare Products: Do They Really Work?</h4>
+                                <span><img src={arrow} alt="" /></span>
+                            </div>
+
+                            <h5>Unlike “off the shelf” products that are made for a million people irrespective of your skin ...</h5>
+
+
+                        </div>
+                        <div className="blogpostcart">
+                            <img src={profile} alt="" />
+                            <span> <h2>Olivia Rhye</h2>
+                                <p>20 Jan 2022</p></span>
+
+                        </div>
+
+                    </div>
+                    <div className="blogpostcard">
+                        <img src={img2} alt="" />
+
+                        <div className="blogpostcontent">
+                            <p>Product</p>
+
+                            <div className="blogpostcontentarrow">
+                                <h4>Facial or Bleach: Which is the Right One For You?</h4>
+                                <span><img src={arrow} alt="" /></span>
+                            </div>
+
+                            <h5>Skin infections such as skin irritation, scaly skin, redness, itching, swelling, blisters and more can...</h5>
+
+
+                        </div>
+                        <div className="blogpostcart">
+                            <img src={profile1} alt="" />
+                            <span> <h2>Phoenix Baker</h2>
+                                <p>19 Jan 2022</p></span>
+
+                        </div>
+
+
+                    </div>
+                    <div className="blogpostcard" id='blogpostcard3'>
+                        <img src={img3} alt="" />
+
+
+                        <div className="blogpostcontent">
+                            <p>oftware Engineering</p>
+
+                            <div className="blogpostcontentarrow">
+                                <h4>Struggling with Fungal Skin Infection?</h4>
+                                <span><img src={arrow} alt="" /></span>
+                            </div>
+
+                            <h5>Skin infections such as skin irritation, scaly skin, redness, itching, swelling, blisters and more can...</h5>
+
+
+                        </div>
+                        <div className="blogpostcart">
+                            <img src={profile2} alt="" />
+                            <span> <h2>Lana Steiner</h2>
+                                <p>18 Jan 2022</p></span>
+
+                        </div>
+                    </div>
                 </div>
 
 
