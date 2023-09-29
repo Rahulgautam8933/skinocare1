@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    gap: 7.5rem;
+    gap: 3.5rem;
 }
 
 .ourExpertiseMainContainer1 {
@@ -21,6 +21,21 @@
     padding-top: 5rem;
 }
 
+.ourexpertiesimgcontent .img img{
+    width: 32.78688rem;
+height: 25rem;
+flex-shrink: 0;
+border-radius: 1.5rem;
+/* background: url(<path-to-image>), lightgray 0px -124.59px / 100% 131.148% no-repeat; */
+}
+.ourexpertiesimgcontent .img1 img{
+    width: 25rem;
+    height: 23.75rem;
+    flex-shrink: 0;
+}
+
+
+
 
 .ourexpertiesimg1 img {
     width: 100%;
@@ -29,10 +44,11 @@
 
 .ourexpertiesimgcontent {
     display: flex;
-    width: 82.5rem;
+    width:90%;
+    margin: auto;
     padding: 2.5rem;
     align-items: flex-start;
-    gap: 7.5rem;
+    gap: 3.5rem;
     border-radius: 2.5rem;
     border: 1px solid var(--foundation-gold-normal, #F6D992);
     background: var(--foundation-pi-4-light, #FEFAF4);
