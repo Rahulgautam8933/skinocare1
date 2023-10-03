@@ -7,6 +7,11 @@ function Sidebar({sidebar, closeback}) {
   const gotocart = ()=>{
     navigator('/check_out')
   }
+  const up = ()=>{
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0; 
+}
+  
   return (
     <>
 
@@ -18,12 +23,12 @@ function Sidebar({sidebar, closeback}) {
     </div>
 
     <ul>
-    <li><Link to="/">About us</Link></li>
-    <li><a href="#sec3maincontainer">Our Expertise</a></li>
-    <li> <a href="#sec7maincontainer">Testimonials</a> </li>
-    <li> <a href="#sec6maincontainer">Skin & Hair</a> </li>
-    <li  > <a href="/shop_now">Shop</a></li>
-    <li  > <a href="/Signup">Sign up</a></li>
+    <li onClick={up} ><Link to="/aboutUs">About us</Link></li>
+    <li onClick={up} ><Link to="/ourExpertise">Our Expertise</Link></li>
+    <li onClick={up} > <a href="#sec7maincontainer">Testimonials</a> </li>
+    <li onClick={up} ><Link to="/skinAndCare">Skin & Hair</Link> </li>
+    <li onClick={up} ><Link to="/shop_now">Shop</Link></li>
+    <li onClick={up} ><Link to="/Signup">Sign up</Link></li>
     </ul>
 
 

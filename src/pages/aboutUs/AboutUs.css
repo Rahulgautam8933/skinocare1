@@ -1,0 +1,677 @@
+.AboutUsHeading {
+    width: 70%;
+    margin: auto;
+}
+
+
+.improvingskillboxheding {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5vw;
+    align-self: stretch;
+}
+
+.improvingskillimgbox {
+    width: 100%;
+}
+
+
+@media (min-width:0px) and (max-width:769px) {
+
+
+    .improvingskillboxContainer {
+        padding: 1rem;
+       
+        display: flex;
+        /* width: 38.75rem; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2vw;
+        flex-shrink: 0;
+    }
+    
+    .improvingskils {
+
+        display: flex;
+        align-items: center;
+        gap: 5.125vw;
+        flex-wrap: wrap;
+
+    }
+
+    .improvingskillimgbox img {
+        width: 100%;
+        padding-left: 2rem;
+    }
+
+    .aboutUsContainer {
+        padding-top: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 90%; */
+        margin: auto;
+        gap: 5.5rem;
+    }
+
+    .improvingskillbox {
+        width: 100%;
+    }
+
+    .improveskillpoint p {
+        color: #000;
+        font-family: Poppins;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    .improvingskillboxheding h2 {
+        color: #000;
+        font-family: Poppins;
+        /* font-size: 5vw; */
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .improvingskillboxheding p {
+        color: var(--grays-gray-6-dark, #1C1C1E);
+        font-family: Poppins;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    .improvingskillboxContainer h6 {
+        color: var(--grays-gray-6-dark, #1C1C1E);
+        font-family: Poppins;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+
+}
+
+@media (min-width:769px) {
+
+
+    .improvingskillboxContainer {
+        padding-left: 3rem;
+        display: flex;
+        /* width: 38.75rem; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2vw;
+        flex-shrink: 0;
+    }
+    
+
+    .improvingskillimgbox img {
+        width: 100%;
+    }
+
+    .improvingskils {
+
+        display: flex;
+        align-items: center;
+        gap: 5.125vw;
+    }
+
+
+    .aboutUsContainer {
+        padding-top: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 90%; */
+        margin: auto;
+        gap: 5.5rem;
+    }
+
+    .improvingskillbox {
+        width: 48%;
+    }
+
+    .improveskillpoint p {
+        color: #000;
+        font-family: Poppins;
+        font-size: 1.3vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    .improvingskillboxheding h2 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 2.5vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .improvingskillboxheding p {
+        color: var(--grays-gray-6-dark, #1C1C1E);
+        font-family: Poppins;
+        font-size: 1.3vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    .improvingskillboxContainer h6 {
+        color: var(--grays-gray-6-dark, #1C1C1E);
+        font-family: Poppins;
+        font-size: 1.4vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+
+}
+
+
+/* our story */
+
+
+@media (min-width:0px) and (max-width:769px) {
+
+    .improvestory {
+        display: flex;
+        width: 90%;
+        /* padding: 0rem 3.75rem; */
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+
+    .ourstoryheading {
+        display: flex;
+
+    }
+
+
+
+    .ourstoryheading {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.5rem;
+        flex-shrink: 0;
+    }
+
+    .ourstoryimg img {
+        width: 100%;
+        border-radius: 100%;
+        background: lightgray 50% / cover no-repeat;
+
+    }
+
+
+}
+
+@media (min-width:769px) and (max-width:1025px) {
+    .improvestory {
+        display: flex;
+        width: 90%;
+        /* padding: 0rem 3.75rem; */
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+
+    .ourstoryheading {
+        display: flex;
+
+    }
+
+
+
+    .ourstoryheading {
+        display: flex;
+        width: 25.75rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.5rem;
+        flex-shrink: 0;
+        text-align: justify;
+    }
+
+    .ourstoryimg img {
+        width: 18rem;
+        border-radius: 100%;
+        background: lightgray 50% / cover no-repeat;
+
+    }
+
+
+
+}
+
+@media (min-width:1025px) {
+
+    .improvestory {
+        display: flex;
+        width: 90%;
+        /* padding: 0rem 3.75rem; */
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+
+    .ourstoryheading {
+        display: flex;
+
+    }
+
+
+
+    .ourstoryheading {
+        display: flex;
+        width: 38.75rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.5rem;
+        flex-shrink: 0;
+    }
+
+    .ourstoryimg img {
+        width: 20rem;
+        border-radius: 100%;
+        background: lightgray 50% / cover no-repeat;
+
+    }
+
+
+}
+
+
+
+
+/* milestonesContainer */
+
+
+
+.milestonesContainer {
+    width: 90%;
+    margin: auto;
+    position: relative;
+
+}
+.milestonesContainer img{
+    width: 100%;
+    padding: 8vw;
+
+}
+
+@media (min-width:0px) and (max-width:600px) {
+  
+    
+    
+.milestonesContainer p{
+    /* width: 10rem; */
+    display: inline-flex;
+flex-direction: column;
+align-items: center;
+gap: 0.5rem;
+position: absolute;
+
+}
+.milestonesContainer p span{
+    color: #000;
+text-align: center;
+font-family: Poppins;
+font-size: 2.3vw;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.milestonesContainer p h2{
+    color: var(--foundation-pi-1-normal-hover, #DD9183);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#p2022{
+    top: -10vw;
+    right: -1vw;
+    width: 6rem;
+    
+}
+#p2021{
+    top: 3vw;
+    right: 17vw;
+    width: 3rem;
+    
+}
+#p2020{
+    top: 1vw;
+    right: 32vw;
+    width: 3rem;
+    
+}
+#p2019{
+    top: 13vw;
+    left: 32vw;
+    width: 2rem;
+    
+}
+#p2018{
+    top: 13vw;
+    left: 14vw;
+    width: 3rem;
+    
+}
+#p2017{
+   top: 28vw;
+    left:-3vw;
+    width: 4rem;
+    
+}
+
+}
+@media (min-width:600px) and (max-width:769px) {
+    
+
+    
+.milestonesContainer p{
+    width: 12rem;
+    display: inline-flex;
+flex-direction: column;
+align-items: center;
+gap: 1.5rem;
+position: absolute;
+top: 0vw;
+right: 3vw;
+}
+.milestonesContainer p span{
+    color: #000;
+text-align: center;
+font-family: Poppins;
+font-size: 1vw;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.milestonesContainer p h2{
+    color: var(--foundation-pi-1-normal-hover, #DD9183);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#p2021{
+    top: 11vw;
+    right: 18vw;
+    
+}
+#p2020{
+    top: 13vw;
+    right: 35vw;
+    
+}
+#p2019{
+    top: 21vw;
+    right: 45vw;
+    
+}
+#p2018{
+    top: 30vw;
+    left: 13vw;
+    
+}
+#p2017{
+   top: 40vw;
+    left: 0vw;
+    
+}
+
+}
+@media (min-width:769px)  {
+    
+
+    
+.milestonesContainer p{
+    width: 12rem;
+    display: inline-flex;
+flex-direction: column;
+align-items: center;
+gap: 1.5rem;
+position: absolute;
+top: 0vw;
+right: 3vw;
+}
+.milestonesContainer p span{
+    color: #000;
+text-align: center;
+font-family: Poppins;
+font-size: 1vw;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.milestonesContainer p h2{
+    color: var(--foundation-pi-1-normal-hover, #DD9183);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#p2021{
+    top: 11vw;
+    right: 18vw;
+    
+}
+#p2020{
+    top: 13vw;
+    right: 35vw;
+    
+}
+#p2019{
+    top: 25vw;
+    right: 47vw;
+    
+}
+#p2018{
+    top: 30vw;
+    left: 13vw;
+    
+}
+#p2017{
+   top: 40vw;
+    left: 0vw;
+    
+}
+
+}
+
+
+
+
+/* pillars */
+
+.aboutUsPillars {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+
+
+
+
+.pilarpara {
+    text-align: justify;
+}
+
+.pilarpara p {
+    color: var(--bg-primary-dark-elevated, #1C1C1E);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pilarimgcontent {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.info h6 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.info p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#info img {
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+}
+
+.pilarimgcontent img {
+    width: 6rem;
+    border-radius: 100%;
+    /* background-color: black; */
+    background: lightgray 50% / cover no-repeat;
+}
+
+
+@media (min-width:0px) and (max-width:500px) {
+
+.pilarscards {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+.pilarcard {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    border-radius: 2.5rem;
+    border: 1px solid var(--foundation-pi-3-normal, #F6C492);
+    /* background: linear-gradient(138deg, #FEFBF4 -0.06%, rgba(254, 251, 244, 0.00) 99.94%); */
+    background-color: #fffdfa;
+}
+}
+
+@media (min-width:500px) and (max-width:769px) {
+
+.pilarscards {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+.pilarcard {
+    width: 44%;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    border-radius: 2.5rem;
+    border: 1px solid var(--foundation-pi-3-normal, #F6C492);
+    /* background: linear-gradient(138deg, #FEFBF4 -0.06%, rgba(254, 251, 244, 0.00) 99.94%); */
+    background-color: #fffdfa;
+}
+
+
+}
+
+@media (min-width:769px)  {
+
+.pilarscards {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+.pilarcard {
+    width: 31%;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    border-radius: 2.5rem;
+    border: 1px solid var(--foundation-pi-3-normal, #F6C492);
+    /* background: linear-gradient(138deg, #FEFBF4 -0.06%, rgba(254, 251, 244, 0.00) 99.94%); */
+    background-color: #fffdfa;
+}
+}
+
+
+
+
+
+
+
+/* aboutsec6 */
+
+
+.aboutsec6 {
+    width: 90%;
+    margin: auto;
+    border-radius: 2rem;
+    overflow: hidden;
+}

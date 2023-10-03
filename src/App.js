@@ -23,6 +23,8 @@ import PrivcyPolicy from './componets/privecy/PrivcyPolicy';
 import TermsofService from './componets/privecy/TermsofService';
 import OurExpertise from './pages/ourExpertise/OurExpertise';
 import OurExpertises from './pages/ourExpertise/OurExpertises';
+import AboutUs from './pages/aboutUs/AboutUs';
+import HistoryAddress from './pages/historyAndChangeAdd/HistoryAddress';
 
 function App() {
 
@@ -69,6 +71,8 @@ function App() {
         <Route path='/termofService' element={<TermsofService/>}></Route>       
         <Route path='/ourExpertise' element={<OurExpertises/>}></Route>       
         <Route path='/ourExpertises' element={<OurExpertise/>}></Route>       
+        <Route path='/aboutUs' element={<AboutUs/>}></Route>       
+        <Route path='/history' element={<HistoryAddress/>}></Route>       
       </Routes>
 
       <Footer />

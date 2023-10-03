@@ -1,7 +1,13 @@
 import React from 'react'
 
 import './Checkoutpage.css'
+import { useNavigate } from 'react-router-dom'
 const Checkoutpage = () => {
+
+    const navigator = useNavigate();
+    const gotohistory = ()=>{
+        navigator("/history");
+    }
     return (
         <>
 
@@ -208,7 +214,7 @@ const Checkoutpage = () => {
                         </div>
                         <div className="checkoutform123">
 
-                            <button>Proseed to pay</button>
+                            <button onClick={gotohistory} >Proseed to pay</button>
 
                         </div>
 

@@ -26,8 +26,8 @@ const up = ()=>{
                     <div className="navbarbox">
                         <div className="navbarlinks">
                             <ul>
-                                <li>
-                                    <Link to="/">About us </Link>
+                                <li onClick={up}>
+                                    <Link to="/aboutUs">About us </Link>
                                 </li>
                                 <li onClick={up} >
                                     <Link to="/ourExpertise">Our Expertise  </Link>

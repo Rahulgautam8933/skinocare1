@@ -1,0 +1,40 @@
+.histroryAddContainer {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 6rem;
+    padding-top: 8rem;
+}
+
+.historyAddbox {
+    width: 35%;
+}
+
+.historyAddbox h2 {
+
+    color: var(--bg-primary-dark-elevated, #1C1C1E);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Title1/Emphasized */
+    font-family: SF Pro;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.125rem;
+    /* 121.429% */
+    letter-spacing: -0.025rem;
+
+}
+
+
+.address button{
+    display: flex;
+padding: 0.625rem 1rem 0.625rem 1.5rem;
+justify-content: center;
+align-items: center;
+gap: 0.5rem;
+align-self: stretch;
+}
