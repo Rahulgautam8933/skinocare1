@@ -1,6 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './HistoryAdd.css'
+
+
+import EditAddress from './EditAddress';
+import AddAddress from './AddAddress'
+import EditDeleteAdd from './EditDeleteAdd'
 const HistoryAddress = () => {
+
+    const [addres, setAddress] = useState(false);
+    const [editadd,setEditAdd] = useState(false);
+    const [addadress,setAddAddress] = useState(false);
+
+
+
     return (
         <>
 
@@ -13,19 +25,17 @@ const HistoryAddress = () => {
                 <div className="historyAddbox">
                     <h2>Account Info</h2>
 
-                    <div className="address">
-                    <span>Name</span>
-                    <p>Siddartha J</p>
-                    <span>Phone Number</span>
-                    <p>98479 69854</p>
-                    <span>Address</span>
-                    <p>#23, Brigade Road Koramangala, Bangalore - 560034</p>
+                    {
+                        !addres ? <AddAddress toggle = {setAddress} />  :
 
-                    <button>Add Address</button>
+                        !editadd ? <EditDeleteAdd toggle = {setEditAdd} toggle2 = {setAddAddress} /> :
 
-                    
-                    </div>
-                    
+                        !addadress ? <EditAddress toggle = {setAddAddress} heading = "Edit my Address"  /> :
+
+                        <EditAddress heading = "Add Address"/>
+    
+                    }
+
                 </div>
 
             </div>
