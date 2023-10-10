@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Signup.css'
 
 import varificationimg from '../../img/otpvarification.svg'
+import OtpInput from 'react-otp-input';
 const Signupvarification = () => {
+    const [otp, setOtp] = useState('');
     return (
         <>
             <div className="signupcontainer2">
@@ -20,22 +22,15 @@ const Signupvarification = () => {
 
                         <div className="verifynumber">
                             <label htmlFor="">Verification code</label>
-                            <div className="verifylableinput">
-                                <div className="verifynumberinput">
-                                    <input type="text" placeholder='0' />
-                                </div>
-                                <div className="verifynumberinput">
-                                    <input type="text" placeholder='0' />
-                                </div>
-                                <div className="verifynumberinput">
-                                    <input type="text" placeholder='0' />
-                                </div>
-                                <div className="verifynumberinput">
-                                    <input type="text" placeholder='0' />
-                                </div>
-                                <div className="verifynumberinput">
-                                    <input type="text" placeholder='0' />
-                                </div>  
+
+                            <div className="verifylableinput12">
+                                <OtpInput className="inputotp"
+                                    value={otp}
+                                    onChange={setOtp}
+                                    numInputs={5}
+                                    renderInput={(props) => <input  {...props} placeholder="0"  />}
+                                    
+                                />
                             </div>
                         </div>
                         <div className="verifysigninlink">

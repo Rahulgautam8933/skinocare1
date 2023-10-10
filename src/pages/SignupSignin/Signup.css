@@ -1,3 +1,114 @@
+
+.verifylableinput12 input {
+    /* font-size: 3.3rem; */
+    margin: 1rem 1rem;
+    /* width: 5rem; */
+    /* padding: 0rem 1.6rem; */
+    /* color: black; */
+    /* text-align: center; */
+    /* border: 1px solid black; */
+    height: 4.2rem;
+
+    display: flex;
+    /* height: 64px; */
+    width: 64px;
+    padding: 8px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--gray-300, #D0D5DD);
+    background: var(--White, #FFF);
+    font-size: 3.8rem;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    color: var(--gray-300, #D0D5DD);
+
+}
+
+.verifylableinput12  {
+   width: 100%;
+   /* background-color: #000; */
+  
+}
+.verifylableinput12 OtpInput {
+   width: 10%;
+   background-color: rgb(198, 187, 187);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* style.css */
+.container { 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	min-height: 100vh; 
+} 
+
+.input { 
+	width: 40px; 
+	border: none; 
+	border-bottom: 3px solid rgba(0, 0, 0, 0.5); 
+	margin: 0 10px; 
+	text-align: center; 
+	font-size: 36px; 
+	cursor: not-allowed; 
+	pointer-events: none; 
+} 
+
+.input:focus { 
+	border-bottom: 3px solid orange; 
+	outline: none; 
+} 
+
+.input:nth-child(1) { 
+	cursor: pointer; 
+	pointer-events: all; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width:0px) and (max-width:768px) {
     .signupcontainer {
         display: flex;

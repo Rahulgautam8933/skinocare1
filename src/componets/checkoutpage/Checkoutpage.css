@@ -71,16 +71,18 @@
 }
 
 
-.form-control:focus{
+.form-control:focus {
     /* border: none; */
     box-shadow: none;
 }
-.form-select:focus{
+
+.form-select:focus {
     /* border: none; */
     box-shadow: none;
 }
+
 .form-select:hover {
-  
+
     background-color: white;
     color: blue;
 }
@@ -263,7 +265,7 @@
 
         /* Shadow/xs */
         box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-        
+
     }
 }
 
@@ -438,11 +440,11 @@
 
         /* Shadow/xs */
         box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-        
-    }
-    
 
-                       
+    }
+
+
+
 }
 
 @media (min-width:1000px) {
@@ -634,4 +636,70 @@
         text-decoration-line: underline;
     }
 
+}
+
+
+
+.paymentMethod {
+    display: flex;
+    /* width: 37.5rem; */
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+
+
+.free p {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75rem;
+    /* 155.556% */
+}
+
+.para h6 {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+    /* 155.556% */
+}
+
+.para p {
+    color: #000;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+    /* 175% */
+}
+
+.checkboxs input {
+    width: 1.25rem;
+    height: 1.25rem;
+    /* border-radius: 0.625rem;
+    border: 1px solid var(--foundation-green-sec-normal-hover, #6BD98F);
+    background: var(--foundation-green-sec-light, #F1FEF5); */
+
+}
+.checkboxs {
+   display: flex;
+   gap: 1.5rem;
+   align-items: center;
+}
+.checkboxs .check {
+   overflow: hidden;
+     width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 0.625rem;
+    border: 1px solid var(--foundation-green-sec-normal-hover, #6BD98F);
+    background: var(--foundation-green-sec-light, #F1FEF5);
+    
 }

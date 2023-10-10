@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 const Checkoutpage = () => {
 
     const navigator = useNavigate();
-    const gotohistory = ()=>{
+    const gotohistory = () => {
         navigator("/history");
     }
     return (
@@ -60,36 +60,36 @@ const Checkoutpage = () => {
                                     <div id="collapseTwo123456" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                         <div className="accordion-body shortbody">
 
-                                        <form class="row g-3">
-                                        <div class="col-md-12">
-                                          <label for="inputEmail4" class="form-label">Full Name</label>
-                                          <input type="text" class="form-control" id="inputEmail4"     />
-                                        </div>
-                                        <div class="col-md-12">
-                                          <label for="inputPassword4" class="form-label">Phone Number</label>
-                                          <input type="number" class="form-control" id="inputPassword4"/>
-                                        </div>
-                                        <div class="col-md-12">
-                                          <label for="inputPassword4" class="form-label">Alternative Phone Number</label>
-                                          <input type="number" class="form-control" id="inputPassword4"/>
-                                        </div>
-                                        <div class="col-md-12">
-                                          <label for="inputPassword4" class="form-label">Email</label>
-                                          <input type="email" class="form-control" id="inputPassword4"/>
-                                        </div>
+                                            <form class="row g-3">
+                                                <div class="col-md-12">
+                                                    <label for="inputEmail4" class="form-label">Full Name</label>
+                                                    <input type="text" class="form-control" id="inputEmail4" />
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="inputPassword4" class="form-label">Phone Number</label>
+                                                    <input type="number" class="form-control" id="inputPassword4" />
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="inputPassword4" class="form-label">Alternative Phone Number</label>
+                                                    <input type="number" class="form-control" id="inputPassword4" />
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="inputPassword4" class="form-label">Email</label>
+                                                    <input type="email" class="form-control" id="inputPassword4" />
+                                                </div>
 
-                                      </form>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div className="checkoutform">
                             <div className="accordion accordianbut" id='accordianbut127' >
                                 <div className="accordion  " id='accordianclass2'>
                                     <h2 className="accordion" id='bordercolor123'>
-                                        <button id='productshortbutton' className="accordion-button   accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1234567" aria-expanded="false" aria-controls="collapseTwo">
+                                        <button id='productshortbutton' className="accordion-button   accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1234567" aria-expanded="false" aria-controls="collapseTwo1234567">
                                             Shipping Address
                                         </button>
                                     </h2>
@@ -166,6 +166,114 @@ const Checkoutpage = () => {
                                                 </div>
 
                                             </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div className="checkoutform">
+                            <div className="accordion accordianbut" id='accordianbut127' >
+                                <div className="accordion  " id='accordianclass2'>
+                                    <h2 className="accordion" id='bordercolor123'>
+                                        <button id='productshortbutton' className="accordion-button   accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo123456712" aria-expanded="false" aria-controls="collapseTwo123456712">
+                                            Shipping Method
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo123456712" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div className="accordion-body shortbody">
+
+                                        <div className="paymentMethod">
+                                        <div className="checkboxs">
+                                            <div  className='check'>
+                                                <input type="checkbox" value="" />
+
+                                            </div>
+                                            <div className="para">
+                                            <h6>Free Shipping (Cash on Delivery)</h6>
+                                            <p>This shipping option is eligible for Cash on Delivery.</p>
+
+                                        </div>
+                                        </div>
+                                       
+                                        <div className="free">
+                                            <p>free</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="paymentMethod">
+                                        <div className="checkboxs">
+                                            <div className='check' >
+                                                <input type="checkbox" value="" />
+
+                                            </div>
+                                            <div className="para">
+                                            <h6>Standard</h6>
+                                           
+                                        </div>
+                                        </div>
+                                       
+                                        <div className="free">
+                                            <p>free</p>
+                                        </div>
+                                    </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div className="checkoutform">
+                            <div className="accordion accordianbut" id='accordianbut127' >
+                                <div className="accordion  " id='accordianclass2'>
+                                    <h2 className="accordion" id='bordercolor123'>
+                                        <button id='productshortbutton' className="accordion-button   accordianbut " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo123456709" aria-expanded="false" aria-controls="collapseTwo123456709">
+                                            Payment Method
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo123456709" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div className="accordion-body shortbody">
+
+                                        <div className="paymentMethod">
+                                        <div className="checkboxs">
+                                            <div className='check' >
+                                                <input type="checkbox" value="" />
+
+                                            </div>
+                                            <div className="para">
+                                           
+                                            <p>Razorpay Secure (UPI, Cards, Wallets, NetBanking)</p>
+
+                                        </div>
+                                        </div>
+                                       
+                                        <div className="free">
+                                            <p>free</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="paymentMethod">
+                                        <div className="checkboxs">
+                                            <div className='check' >
+                                                <input type="checkbox" value="" />
+
+                                            </div>
+                                            <div className="para">
+                                            <p>Cash on Delivery (COD)</p>
+                                           
+                                        </div>
+                                        </div>
+                                       
+                                        <div className="free">
+                                            <p>free</p>
+                                        </div>
+                                    </div>
 
                                         </div>
                                     </div>
