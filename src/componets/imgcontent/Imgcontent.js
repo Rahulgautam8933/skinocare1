@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 
 import Carousel from 'react-bootstrap/Carousel';
 
 import Button from '../button/Button'
 function Imgcontent({ secimg, h1, p, secimg2, secimg3, secimg4, secimg5 }) {
+
+
+ 
 
 
   return (
@@ -48,8 +51,6 @@ function Imgcontent({ secimg, h1, p, secimg2, secimg3, secimg4, secimg5 }) {
                     </Carousel.Caption>
                   </Carousel.Item>
                 </Carousel>
-
-              
               </div>
             </div>
           </div >
