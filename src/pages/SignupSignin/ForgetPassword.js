@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 
 const ForgetPassword = () => {
     const navigator = useNavigate();
-    const [forgetemail,setForgetemail] = useState(false);
+    const [forgetemail, setForgetemail] = useState(false);
 
     return (
         <>
@@ -23,12 +23,11 @@ const ForgetPassword = () => {
                         </div>
                         <div className="verifynumber">
 
-                        {
-                            !forgetemail ? <p>Enter your registered email to reset the password.</p>
-                            : <p>If there is an account associated with this email address you  <br /> will receive a Link to reset email.</p>
-                            
-                        }
-                           
+                            {
+                                !forgetemail ? <p>Enter your registered email to reset the password.</p>
+                                    : <p>If there is an account associated with this email address you  <br /> will receive a Link to reset email.</p>
+                            }
+
                         </div>
                         <div className="verifysigninlink">
                             <div className="forgetemail">
@@ -41,24 +40,21 @@ const ForgetPassword = () => {
                                 </div>
                             </div>
                         </div>
-{
-    !forgetemail ? "" : <div className="">
-    <p>Didn`t receive the email? Click to resend</p>
-    </div>
-}
+                        {
+                            !forgetemail ? "" : <div className="">
+                                <p>Didn`t receive the email? Click to resend</p>
+                            </div>
+                        }
 
                     </div>
                     <div className="verifybutton">
 
-                    {
-                        !forgetemail ? 
-                        <button onClick={()=>setForgetemail(true)} >Reset Password</button>
-                        : 
-                        <button onClick={()=>navigator('/signIn')} >Go back to Sign in</button>
-                        
-                    }
-
-                    
+                        {
+                            !forgetemail ?
+                                <button onClick={() => setForgetemail(true)} >Reset Password</button>
+                                :
+                                <button onClick={() => navigator('/signIn')} >Go back to Sign in</button>
+                        }
 
                     </div>
                 </div>
