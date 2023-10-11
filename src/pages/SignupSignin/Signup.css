@@ -1,16 +1,45 @@
 
-.verifylableinput12 input {
-    /* font-size: 3.3rem; */
-    margin: 1rem 1rem;
-    /* width: 5rem; */
-    /* padding: 0rem 1.6rem; */
-    /* color: black; */
-    /* text-align: center; */
-    /* border: 1px solid black; */
-    height: 4.2rem;
+.verifylableinput12  {
+   width: 100%;
+   /* background-color: #000; */
+  
+}
+.verifylableinput12 OtpInput {
+   width: 10%;
+   background-color: rgb(198, 187, 187);
+  
+}
 
+
+@media (min-width:0px) and (max-width:500px) {
+    
+.verifylableinput12 input {
+    margin: 1rem 0.5rem;
+    height: 13.4vw;
     display: flex;
-    /* height: 64px; */
+    width: 64px;
+    padding: 8px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--gray-300, #D0D5DD);
+    background: var(--White, #FFF);
+    font-size: 13.2vw;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    color: var(--gray-300, #D0D5DD);
+
+}
+
+}
+@media (min-width:500px)  {
+    
+.verifylableinput12 input {
+    margin: 1rem 1rem;
+    height: 4.2rem;
+    display: flex;
     width: 64px;
     padding: 8px;
     align-items: center;
@@ -27,40 +56,7 @@
 
 }
 
-.verifylableinput12  {
-   width: 100%;
-   /* background-color: #000; */
-  
 }
-.verifylableinput12 OtpInput {
-   width: 10%;
-   background-color: rgb(198, 187, 187);
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -73,7 +69,7 @@
 	min-height: 100vh; 
 } 
 
-.input { 
+/* .input { 
 	width: 40px; 
 	border: none; 
 	border-bottom: 3px solid rgba(0, 0, 0, 0.5); 
@@ -82,7 +78,7 @@
 	font-size: 36px; 
 	cursor: not-allowed; 
 	pointer-events: none; 
-} 
+}  */
 
 .input:focus { 
 	border-bottom: 3px solid orange; 
