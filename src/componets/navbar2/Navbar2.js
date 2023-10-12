@@ -13,6 +13,18 @@ const Navbar2 = ({ openSidebar }) => {
         setShow3(false);
     }
 
+    const signup = () => {
+        navigator('/Signup');
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+
+    }
+    const signIn = () => {
+        navigator('/signIn');
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
     return (
         <>
 
@@ -57,8 +69,8 @@ const Navbar2 = ({ openSidebar }) => {
                                         <div id="collapseTwo123" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                             <div class="accordion-body profilebox1">
                                                 <p><i class="fa-regular fa-user"></i> </p>
-                                                <p>Sign up </p>
-                                                <p>Sign in</p>
+                                                <p onClick={signup} >Sign up </p>
+                                                <p onClick={signIn}>Sign in</p>
                                             </div>
                                         </div>
                                     </div>

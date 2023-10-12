@@ -13,6 +13,11 @@ const up = ()=>{
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0; 
 }
+const contact = ()=>{
+   navigator('/contact');
+   document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+}
 
     return (
         <>
@@ -32,32 +37,23 @@ const up = ()=>{
                                 <li onClick={up} >
                                     <Link to="/ourExpertise">Our Expertise  </Link>
                                 </li>
-                                <li>
+                                <li onClick={up} >
                                     <a href="#sec7maincontainer">Testimonials   </a>
                                 </li>
                                 <li onClick={up} >
                                     <Link to="/skinAndCare">Skin & Hair</Link>
                                 </li>
-                                <li>
+                                <li onClick={up} >
                                     <Link to="/shop_now"> Shop</Link>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                   
                     <div className="navbarbox">
                         <div className="contactnavbox">
                             <div className="navbarbutton">
-                                <button onClick={()=>navigator('/Signup')}>Sign up</button>
-                            </div>
-                           
-
-                           
-                        </div>
-                    </div>
-                    <div className="navbarbox">
-                        <div className="contactnavbox">
-                            <div className="navbarbutton">
-                                <button onClick={()=>navigator('/contact')}   >Contact us</button>
+                                <button onClick={contact}   >Contact us</button>
                             </div>
                            
 
