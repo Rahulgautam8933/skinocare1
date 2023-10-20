@@ -3,21 +3,21 @@ import navlogo from '../../img/logo.png'
 import { Link, useNavigate } from 'react-router-dom'
 function Navbar({ openSidebar }) {
 
-    const navigator = useNavigate();   
+    const navigator = useNavigate();
     const gotohome = () => {
         navigator('/');
         document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0; 
+        document.documentElement.scrollTop = 0;
     }
-const up = ()=>{
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0; 
-}
-const contact = ()=>{
-   navigator('/contact');
-   document.body.scrollTop = 0;
-   document.documentElement.scrollTop = 0;
-}
+    const up = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    const contact = () => {
+        navigator('/contact');
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
 
     return (
         <>
@@ -49,15 +49,13 @@ const contact = ()=>{
                             </ul>
                         </div>
                     </div>
-                   
+
                     <div className="navbarbox">
                         <div className="contactnavbox">
                             <div className="navbarbutton">
                                 <button onClick={contact}   >Contact us</button>
                             </div>
-                           
-
-                           
+                            
                         </div>
                     </div>
                     <div className="navbarbox1">
