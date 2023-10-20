@@ -578,6 +578,7 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+    width: 35%;
 }
 
 .verifynumberbox {
@@ -983,3 +984,11 @@ border-radius: 2.5rem;
 .gendercontainer:hover{
     cursor: pointer;
 }
+
+
+@media (min-width:0px) and (max-width:768px) {
+    .verifycontent {
+        width: 80%;
+    }
+}
+

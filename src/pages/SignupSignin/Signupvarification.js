@@ -4,14 +4,13 @@ import './Signup.css'
 import female from '../../img/Layer_1.png'
 import male from '../../img/Capa_1.png'
 
-import next from '../../img/Next.png'
-
 import varificationimg from '../../img/otpvarification.svg'
 import OtpInput from 'react-otp-input';
 import AfterOtp from './AfterOtp';
 const Signupvarification = () => {
     const [otp, setOtp] = useState('');
-    const [afterOtp, setAfterOtp] = useState(true);
+    const [afterOtp, setAfterOtp] = useState(false);
+   
     return (
         <>
             <div className="signupcontainer2">
@@ -120,9 +119,13 @@ const Signupvarification = () => {
                     }
 
 
-                    <div className="verifybutton">
-                        <button>Submit</button>
-                    </div>
+                    {
+                        !afterOtp ?   <div className="verifybutton">
+                        <button onClick={()=>setAfterOtp(true)} >Submit</button>
+                    </div> : "" 
+                 }
+
+                   
 
 
                 </div>
