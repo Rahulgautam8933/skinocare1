@@ -87,8 +87,8 @@
 
 
 
-.addadresscontainer{
-    display: flex; 
+.addadresscontainer {
+    display: flex;
     gap: 1rem;
     flex-direction: column;
 }
@@ -109,23 +109,24 @@
 }
 
 
-.button1{
+.button1 {
     display: flex;
-align-items: flex-start;
-gap: 1rem;
-align-self: stretch;
-margin: 1rem 0rem;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+    margin: 1rem 0rem;
 }
 
 
-.button1 #delete{
-   
-background: #f6a192;
-border: none;
-color: white;
+.button1 #delete {
+
+    background: #f6a192;
+    border: none;
+    color: white;
 }
-.button1 #delete span{
-color: white;
+
+.button1 #delete span {
+    color: white;
 }
 
 
@@ -263,21 +264,22 @@ color: white;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    
+
     align-self: stretch;
 }
+
 .pincode button {
     display: flex;
-height: 2.5rem;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 0.5rem;
-color: white;
-padding: 0.9rem;
-border: none;
-border-radius: 6.25rem;
-background: var(--foundation-green-sec-normal, #F6A192);
+    height: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 6.25rem;
+    background: var(--foundation-green-sec-normal, #F6A192);
 }
 
 
@@ -350,4 +352,188 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+#pills-tab {
+    display: flex;
+    padding: 0.375rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.375rem;
+    align-self: stretch;
+    border-radius: 2.5rem;
+    border: 1px solid var(--foundation-green-sec-normal, #F6A192);
+    background: var(--bg-primary, #FFF);
+    justify-content: space-between;
+}
+
+
+#pills-tab li {
+    width: 45%;
+    position: relative;
+}
+
+#pills-home-tab {
+
+    width: 100%;
+}
+
+#pills-profile-tab {
+
+    width: 100%;
+}
+
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    display: flex;
+    padding: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex: 1 0 0;
+    border-radius: 1.875rem;
+    background: var(--foundation-green-sec-normal, #F6A192);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.04);
+
+}
+
+
+/* #pills-home {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    align-self: stretch;
+    border-radius: 1rem;
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.12);
+} */
+
+.ordersecdays {
+    display: flex;
+    padding: 0.25rem 0.5rem;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 1.25rem;
+    background: #ECFDF3;
+}
+
+.ordersecdays p {
+    color: #027A48;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Caption1/Emphasized */
+    font-family: SF Pro;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 510;
+    line-height: 1rem;
+    /* 133.333% */
+    letter-spacing: -0.025rem;
+    margin: 0;
+}
+
+
+.ordersecmiddata {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    align-self: stretch;
+}
+
+.orderseccontent2 h5 {
+    color: var(--grays-gray-3-dark, #48484A);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Callout/Emphasized */
+    font-family: SF Pro;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 1.3125rem;
+    /* 131.25% */
+    letter-spacing: -0.025rem;
+}
+
+.orderseccontent2 h5 span {
+    color: var(--bg-primary-dark-elevated, #1C1C1E);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Callout/Emphasized */
+    font-family: SF Pro;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 1.3125rem;
+    /* 131.25% */
+    letter-spacing: -0.025rem;
+}
+
+
+#pills-home h4 {
+    color: var(--foundation-bril-normal, #F2553A);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Subheadline/Regular */
+    font-family: SF Pro;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    /* 133.333% */
+    letter-spacing: -0.025rem;
+    align-self: stretch;
+}
+
+.orderlinehr hr {
+    width: 0.0625rem;
+    /* height: 100%; */
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.00) -0.01%, #000 50.52%, rgba(0, 0, 0, 0.00) 96.35%);
+}
+
+
+
+#orderselectcontainer {
+
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    align-self: stretch;
+    border-radius: 1rem;
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.12);
+}
+
+#pills-profile h4 {
+    color: var(--foundation-bril-normal, #F2553A);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Subheadline/Regular */
+    font-family: SF Pro;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    /* 133.333% */
+    letter-spacing: -0.025rem;
+    align-self: stretch;
 }

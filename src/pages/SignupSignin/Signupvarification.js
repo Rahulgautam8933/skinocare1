@@ -3,14 +3,20 @@ import './Signup.css'
 
 import female from '../../img/Layer_1.png'
 import male from '../../img/Capa_1.png'
-
+import vector from '../../img/Vector.png'
+import vector12 from '../../img/Layer_12.png'
 import varificationimg from '../../img/otpvarification.svg'
 import OtpInput from 'react-otp-input';
 import AfterOtp from './AfterOtp';
+import AfterOtpform from './AfterOtpform'
+import GetLocation from './GetLocation'
 const Signupvarification = () => {
     const [otp, setOtp] = useState('');
     const [afterOtp, setAfterOtp] = useState(false);
-   
+    const [afterOtp2, setAfterOtp2] = useState(false);
+    const [afterlocation, setafterlocation] = useState(false);
+
+
     return (
         <>
             <div className="signupcontainer2">
@@ -45,92 +51,56 @@ const Signupvarification = () => {
                                 <p><strong> Didn`t receive?</strong> <span> Send again</span></p>
                             </div>
 
-                        </div> : <div className="afterotpcontainer">
+                        </div> :
 
-                            <div className="afterotpunputbox">
+                            !afterOtp2 ? <AfterOtpform toggle={setAfterOtp2} /> :
+                                !afterlocation ? <GetLocation toggle={setafterlocation} /> :
+                                    <div className="afterlocationcontainer">
 
-                                <div><label htmlFor="name">Full Name</label> </div>
-                                <input type="text" placeholder='Enter here' />
-                            </div>
-                            <div className="afterotpunputbox">
+                                        <h5>But how my city affects my skin and hair?</h5>
 
-                                <div><label htmlFor="age">Age</label> </div>
-                                <input type="numbert" placeholder='Enter here' />
+                                        <p>You area’s climate can be a major factor behind your skin or hair concerns.</p>
+                                        <div className="afterlocationboxs">
+                                            <div className="afterlocationboximg">
+                                                <img src={vector12} alt="" />
+                                            </div>
+                                            <p>Bangalore’s hard water can cause heavy hair fall</p>
 
-
-                            </div>
-                            <div className="afterotpunputbox">
-
-                                <div><label htmlFor="email">Email</label> </div>
-                                <input type="email" placeholder='Enter here' />
-
-
-                            </div>
-                            <div className="afterotpunputbox">
-
-                                <div><label htmlFor="gender">Choose your Gender</label> </div>
-
-
-                                <label className="gendercontainer" htmlFor="flexRadioDefault2">
-
-                                    <label className="imgcontents"  htmlFor="flexRadioDefault2" >
-                                        <div className="genderimg">
-                                            <img src={female} alt="" />
                                         </div>
-                                        <p>Female</p>
+                                        <div className="afterlocationboxs">
+                                            <div className="afterlocationboximg">
+                                                <img src={vector} alt="" />
+                                            </div>
+                                            <p>Delhi’s pollution is a major factor behind pigmentation</p>
 
-                                    </label>
+                                        </div>
+                                        <div className="afterlocationboxs">
+                                            <div className="afterlocationboximg">
+                                                <img src={vector12} alt="" />
+                                            </div>
+                                            <p>Delhi’s pollution is a major factor behind pigmentation</p>
+                                            <div className="afterlocationboximg">
+                                                <img src={vector} alt="" />
+                                            </div>
+                                        </div>
 
-                                    <div className="next-button">
-                                        <input type="radio" name='gender' id="flexRadioDefault2" />
                                     </div>
 
-
-
-                                </label>
-
-                                <label className="gendercontainer"  htmlFor="flexRadioDefault1">
-
-                                    <label className="imgcontents"  htmlFor="flexRadioDefault1">
-                                        <div className="genderimg">
-                                            <img src={male} alt="" />
-                                        </div>
-                                        <p>Male</p>
-                                       
-                                    </label>
-
-                                    <div className="next-button">
-                                        <input type="radio" name='gender' id='flexRadioDefault1' />
-                                    </div>
-
-
-
-                                </label>
-
-
-
-
-
-
-                            </div>
-
-                            <button>Proceed</button>
-                        </div>
                     }
 
 
                     {
-                        !afterOtp ?   <div className="verifybutton">
-                        <button onClick={()=>setAfterOtp(true)} >Submit</button>
-                    </div> : "" 
-                 }
+                        !afterOtp ? <div className="verifybutton">
+                            <button onClick={() => setAfterOtp(true)} >Submit</button>
+                        </div> : ""
+                    }
 
-                   
+
 
 
                 </div>
 
-            </div>
+            </div >
         </>
     )
 }

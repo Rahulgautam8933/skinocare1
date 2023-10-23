@@ -874,6 +874,8 @@
     align-items: flex-start;
     gap: 1rem;
     width: 100%;
+
+    margin-top: 2.5rem;
 }
 
 .afterotpunputbox {
@@ -950,38 +952,39 @@
     justify-content: space-between;
 }
 
-.next-button{
+.next-button {
     display: flex;
-padding: 0.5rem;
-align-items: flex-start;
-gap: 0.625rem;
-border-radius: 2.5rem;
-background: var(--foundation-pi-1-normal, #F6A192);
+    padding: 0.5rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 2.5rem;
+    background: var(--foundation-pi-1-normal, #F6A192);
 }
-.next-button input{
+
+.next-button input {
     width: 1.1rem;
     height: 1.1rem;
 }
 
-.imgcontents{
+.imgcontents {
     display: flex;
     gap: 1.5rem;
 }
 
-.afterotpcontainer button{
+.afterotpcontainer button {
     display: flex;
-padding: 1.125rem 2.25rem;
-justify-content: center;
-align-items: center;
-gap: 0.5rem;
-flex: 1 0 0;
-align-self: stretch;
-background: var(--m-3-state-layers-light-on-surface-opacity-012, rgba(29, 27, 32, 0.12));
-border: none;
-border-radius: 2.5rem;
+    padding: 1.125rem 2.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    background: var(--m-3-state-layers-light-on-surface-opacity-012, rgba(29, 27, 32, 0.12));
+    border: none;
+    border-radius: 2.5rem;
 }
 
-.gendercontainer:hover{
+.gendercontainer:hover {
     cursor: pointer;
 }
 
@@ -992,3 +995,156 @@ border-radius: 2.5rem;
     }
 }
 
+
+
+
+
+
+
+
+/* addlocation */
+
+
+.addlocationContainer {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.addlocationhead {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.addlocationhead p {
+    color: var(--bg-primary-dark-elevated, #1C1C1E);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Callout/Regular */
+    font-family: SF Pro;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3125rem;
+    /* 131.25% */
+    letter-spacing: -0.025rem;
+}
+
+.addlocationhead h4 {
+    color: var(--bg-primary-dark-elevated, #1C1C1E);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF Pro;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 1.3125rem;
+    /* 131.25% */
+    letter-spacing: -0.025rem;
+    text-decoration-line: underline;
+}
+
+.addlocationmid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.375rem;
+    align-self: stretch;
+}
+
+.addlocationmid label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.375rem;
+    align-self: stretch;
+}
+
+.addlocationmid input {
+    display: flex;
+    padding: 0.625rem 0.875rem;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: stretch;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid var(--bg-primary-dark-elevated, #1C1C1E);
+    background: var(--White, #FFF);
+
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+
+.addlocationbutton {
+    width: 100%;
+    position: relative;
+
+}
+
+.addlocationbutton button {
+    display: flex;
+    height: 3.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: stretch;
+    width: 100%;
+    border-radius: 6.25rem;
+    border: 1px solid var(--bg-primary-dark-elevated, #1C1C1E);
+}
+
+
+
+
+/* afteraddlocation */
+
+
+.afterlocationcontainer {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.afterlocationcontainer h5 {
+    color: var(--bg-primary-dark-elevated, #1C1C1E);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF Pro;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 1.3125rem;
+    /* 131.25% */
+    letter-spacing: -0.025rem;
+    margin: 0;
+}
+
+.afterlocationcontainer p {
+    color: var(--bg-primary-dark-elevated, #1C1C1E);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Title3/Regular */
+    font-family: SF Pro;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    /* 125% */
+    letter-spacing: -0.025rem;
+    margin: 0;
+}
+
+.afterlocationboxs {
+    display: flex;
+    width: 24.75rem;
+    padding: 1rem;
+    align-items: flex-start;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #FFC2C2;
+    background: #FFFAFA;
+}

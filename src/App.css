@@ -8,6 +8,21 @@
 
 
 
+/* productslidernew */
+
+.productsliderboxs2 {
+  display: flex;
+  overflow-x: auto;
+  /* border: 1px solid black; */
+}
+
+.productsliderboxs2::-webkit-scrollbar {
+  /* display: none; */
+  width: 0;
+}
+
+
+
 
 
 
@@ -397,7 +412,7 @@ img {
     border-radius: 50px;
     border: 1px solid var(--foundation-sec-cream-normal, #ECDEC1);
     background: var(--foundation-pri-cream-light, #FFFEFD);
-    
+
 
   }
 
@@ -421,7 +436,7 @@ img {
     border-radius: 50px;
     border: 1px solid var(--foundation-sec-cream-normal, #ECDEC1);
     /* background: var(--foundation-pri-cream-light, #FFFEFD); */
-    
+
 
   }
 
@@ -596,8 +611,8 @@ img {
     overflow: hidden;
     position: relative;
     border-radius: 50px;
-border: 1px solid var(--foundation-sec-cream-normal, #ECDEC1);
-background: var(--foundation-pri-cream-light, #FFFEFD);
+    border: 1px solid var(--foundation-sec-cream-normal, #ECDEC1);
+    background: var(--foundation-pri-cream-light, #FFFEFD);
 
   }
 
@@ -2226,6 +2241,7 @@ background: var(--foundation-pri-cream-light, #FFFEFD);
   .footermaincontainer {
     position: relative;
   }
+
   .gouplogo {
 
     display: flex;
@@ -2241,7 +2257,7 @@ background: var(--foundation-pri-cream-light, #FFFEFD);
     background: var(--foundation-pri-cream-darker, #585653);
     z-index: 10;
   }
-  
+
   .footerboxs {
     display: flex;
     justify-content: space-between;
@@ -2345,8 +2361,8 @@ background: var(--foundation-pri-cream-light, #FFFEFD);
   .footermaincontainer {
     position: relative;
   }
-  
-  
+
+
   .gouplogo {
 
     display: flex;
@@ -2355,13 +2371,14 @@ background: var(--foundation-pri-cream-light, #FFFEFD);
     justify-content: flex-end;
     align-items: flex-end;
     gap: 10px;
-    position: absolute;z-index: 10;
+    position: absolute;
+    z-index: 10;
     right: 60px;
     bottom: 323px;
     border-radius: 50px;
     background: var(--foundation-pri-cream-darker, #585653);
   }
-  
+
 
   .footerboxs {
     display: flex;
@@ -2469,7 +2486,7 @@ background: var(--foundation-pri-cream-light, #FFFEFD);
     border-radius: 50px;
     background: var(--foundation-pri-cream-darker, #585653);
   }
-  
+
 
   .footermaincontainer {
     position: relative;
@@ -2493,7 +2510,7 @@ background: var(--foundation-pri-cream-light, #FFFEFD);
 
   .footerboximg {
     width: 6rem;
-   
+
   }
 
   .footerboximg img {
@@ -2503,7 +2520,7 @@ background: var(--foundation-pri-cream-light, #FFFEFD);
   .footerbox1boxs {
     display: flex;
     justify-content: space-between;
-   
+
   }
 
   .footerbox {
@@ -2523,7 +2540,7 @@ background: var(--foundation-pri-cream-light, #FFFEFD);
 
   .footerbox1box p {
     font-size: 1.14vw;
-  
+
     font-weight: 500;
   }
 
@@ -2535,7 +2552,7 @@ background: var(--foundation-pri-cream-light, #FFFEFD);
   .footerbox1box p i {
     font-size: 1.3rem;
     padding-right: 1rem;
-    
+
   }
 
   .footerbox1boxsociallinks {

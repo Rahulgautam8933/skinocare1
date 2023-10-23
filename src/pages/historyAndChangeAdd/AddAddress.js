@@ -1,7 +1,7 @@
 import React from 'react'
 import './HistoryAdd.css'
 import icon from '../../img/icon.svg'
-const AddAddress = ({toggle}) => {
+const AddAddress = ({ toggle }) => {
     return (
         <>
 
@@ -13,7 +13,7 @@ const AddAddress = ({toggle}) => {
                     <p>98479 69854</p>
                     <span>Address</span>
                     <p>#23, Brigade Road Koramangala, Bangalore - 560034</p>
-                    <button onClick={()=> toggle(true)} ><span>Add Address</span> <img src={icon} alt="" /> </button>
+                    <button onClick={() => toggle(true)} ><span>Add Address</span> <img src={icon} alt="" /> </button>
                 </div>
 
                 <div className="address">
@@ -23,7 +23,7 @@ const AddAddress = ({toggle}) => {
                     <p>98479 69854</p>
                     <span>Address</span>
                     <p>#23, Brigade Road Koramangala, Bangalore - 560034</p>
-                    <button onClick={()=> toggle(true)} ><span>Add Address</span> <img src={icon} alt="" /> </button>
+                    <button onClick={() => toggle(true)} ><span>Add Address</span> <img src={icon} alt="" /> </button>
                 </div>
 
             </div>
